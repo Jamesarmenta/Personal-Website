@@ -1,12 +1,13 @@
 $( document ).ready(function() {
 
- $("body").animate({opacity: 1}, timing/2);
+  var timing = 800;
+  $("body").animate({opacity: 1}, timing/2);
 
- var tabletWidth = 1000;
- var mobileWidth = 600;
- var freshpage = function() {
+  var tabletWidth = 1000;
+  var mobileWidth = 600;
+  var freshpage = function() {
 
-  if($(window).width() > tabletWidth ){
+    if($(window).width() > tabletWidth ){
     //parallax movement onscroll
     var maxDistance = 60;
     $(".lax").each(function(){
@@ -50,7 +51,6 @@ function getRootUrl() {
   return window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/';
 }
 
-var timing = 800;
 function exitPage ( href ) {
   if(href != undefined){
     $("body").animate({opacity: 0}, timing/2);
