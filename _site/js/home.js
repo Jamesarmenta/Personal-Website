@@ -117,7 +117,7 @@ $('#projectWrapper').parallax({
 
   var timing = 1000;
 
-   $("img").click(function(){
+   $("img.project").click(function(){
       $(".project").not(this).fadeOut(timing*.6);
       $(this).delay(timing*.4).fadeOut(timing*.6);
     });
