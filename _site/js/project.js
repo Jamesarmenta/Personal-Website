@@ -6,10 +6,10 @@ $( document ).ready(function() {
        event.preventDefault();
        $("body").animate({opacity: 0}, timing/2);
        href = $(this).attr('href');
-       setTimeout(function() {window.location = href}, timing/2);
+       setTimeout( function() {window.location = href;}, timing/2);
    });
 
-  $("body").animate({opacity: 1}, timing/2);
+  $("body").animate({opacity: 1}, 500);
 
   var tabletWidth = 1000;
   var mobileWidth = 600;

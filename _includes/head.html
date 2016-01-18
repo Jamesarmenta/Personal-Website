@@ -9,8 +9,8 @@
 	<title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/main.css">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="shortcut icon" href="/images/favicon.png"/>
 	<link rel="icon" href="/images/favicon.png"/>
@@ -22,7 +22,7 @@
 	{% if page.layout == 'home' %}
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js'></script>
 	<script src='http://cdn.rawgit.com/wagerfield/parallax/master/deploy/jquery.parallax.min.js'></script>
-	<script src="js/home.js"></script>
+	<script src="/js/home.js"></script>
 	{% else %}
 	<script type="text/javascript">
 		document.write(
@@ -32,7 +32,7 @@
 			);
 	</script>
 	<script src='http://cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.parallax-scroll.js'></script>
-	<script src="js/project.js"></script>
+	<script src="/js/project.js"></script>
 	{% endif %}
 
 	<script>
