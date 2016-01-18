@@ -124,7 +124,7 @@ $('#projectWrapper').parallax({
    $("a").click(function ( event ){
        event.preventDefault();
        href = $(this).attr('href');
-       setTimeout(function() {window.location = href}, timing);
+       setTimeout(function() {window.location = href;}, timing);
    });
 });//END FUNCTION FOR 'AFTER IMAGES LOAD'
 
@@ -140,14 +140,14 @@ $.get("http://ipinfo.io", function(response) {
     
     $.get("http://api.sunrise-sunset.org/json?lat="+lat+"&lng="+lon+"&callback=mycallback", function (sunsetdata) {
      var sunset = sunsetdata.results.sunset; //returns as 1:00:08 AM or 12:00:08 AM
-     if(sunset.length == 10){sunset = "0"+sunset} //takes care of differing lengths
+     if(sunset.length == 10){sunset = "0"+sunset;} //takes care of differing lengths
      sunset = sunset.replace(/\:\d\d /g, '');//gets rid of minutes & AM/PM
      var seconds = $.now()/1000;
       
         $.getJSON("https://maps.googleapis.com/maps/api/timezone/json?location="+lat+","+lon+"&timestamp="+seconds+"&callback=timezone&key=AIzaSyB7ZmQMmam7p0RhClNy3-CWHqdzjJO7IEo", function(timezone) {
           var offset = timezone.rawOffset / 3600;
           var hour = parseInt(sunset.substring(0,2))+offset;
-          if(hour<0){hour = hour + 12};
+          if(hour<0){hour = hour + 12;}
           var minute = sunset.substring(3,5);
           
           $("#weather").append("Sunset is at " + hour + ":" + minute + "pm in " + city);
@@ -158,4 +158,4 @@ $.get("http://ipinfo.io", function(response) {
           
 }, "jsonp");
   
-}
+};
