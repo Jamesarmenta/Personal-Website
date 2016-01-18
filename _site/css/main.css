@@ -44,9 +44,6 @@ h2.project {
   max-width: 90px;
   max-height: 90px;
   overflow: visible; }
-  @media (max-width: 1000px) {
-    h2.project {
-      font-size: 12px; } }
   @media (max-width: 600px) {
     h2.project {
       max-width: 60px;
