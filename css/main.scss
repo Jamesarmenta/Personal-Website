@@ -29,9 +29,6 @@ body
 	font-family: $base-font-family;
 	font-weight: $base-font-weight;
 	font-size: $base-font-size;
-	@media ($tablet){
-		font-size: $base-font-size*.75;
-	}
 }
 
 a, a:visited{color: black; text-decoration: none;}
@@ -60,6 +57,9 @@ h2.project
 {
 	max-width: 90px;
 	max-height: 90px;
+	@media ($tablet) {
+		font-size: $base-font-size*.75;
+	}
 	@media ($mobile) {
 		max-width: 60px;
 		max-height: 60px;
