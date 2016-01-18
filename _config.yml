@@ -10,3 +10,5 @@ github_username:  jamesarmenta
 # Build settings
 markdown: kramdown
 permalink: /:title.html
+gems: 
+ - jekyll-sitemap
