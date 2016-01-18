@@ -52,8 +52,10 @@ function getRootUrl() {
 
 var timing = 800;
 function exitPage ( href ) {
-  $("body").animate({opacity: 0}, timing/2);
-  setTimeout(function() {window.location = href}, timing/2);
+  if(href != undefined){
+    $("body").animate({opacity: 0}, timing/2);
+    setTimeout(function() {window.location = href}, timing/2);
+  }
 }
 
 $("a").click(function ( event ){
