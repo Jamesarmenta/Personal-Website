@@ -39,12 +39,11 @@ $(document).keydown(function(e) {
     if (e.keyCode == 37) { // left arrow key
       alert("left");
       href = $("a.prev").attr('href');//get href from previous buttom
-      window.location = getRootUrl();
+      exitPage(href);
     }
     if (e.keyCode == 39) { // right arrow key
-      alert("right");
       href = $("a.next").attr('href');//get href from previous buttom
-      window.location = getRootUrl();
+      exitPage(href);
     }
   });
 
