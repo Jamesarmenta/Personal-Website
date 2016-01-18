@@ -28,7 +28,7 @@ h5 {
 h6 {
   font-size: .75em; }
 
-.project {
+.project, img.project {
   position: absolute;
   margin: auto;
   top: 0;
@@ -37,7 +37,7 @@ h6 {
   right: 0;
   max-width: 22%; }
   @media (max-width: 600px) {
-    .project {
+    .project, img.project {
       max-width: 28%; } }
 
 h2.project {
