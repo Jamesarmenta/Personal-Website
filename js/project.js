@@ -1,31 +1,10 @@
 $( document ).ready(function() {
 
- var timing = 800;
+ $("body").animate({opacity: 1}, timing/2);
 
- document.onkeydown = function(evt) {
-  evt = evt || window.event;
-  if (evt.keyCode == 27) {
-    $("body").animate({opacity: 0}, timing/2);
-    alert("Escape");
-  }
-};
-
-function getRootUrl() {
-  return window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/';
-}
-
-$("a").click(function ( event ){
- event.preventDefault();
- $("body").animate({opacity: 0}, timing/2);
- href = $(this).attr('href');
- setTimeout(function() {window.location = href}, timing/2);
-});
-
-$("body").animate({opacity: 1}, timing/2);
-
-var tabletWidth = 1000;
-var mobileWidth = 600;
-var freshpage = function() {
+ var tabletWidth = 1000;
+ var mobileWidth = 600;
+ var freshpage = function() {
 
   if($(window).width() > tabletWidth ){
     //parallax movement onscroll
@@ -48,6 +27,39 @@ freshpage();
 $.event.special.debouncedresize.threshold = 500;//wait until 500ms between resizes to trigger
 $(window).bind("debouncedresize", function() {
   freshpage();
+});
+
+
+//PAGE EXITS
+$(document).keydown(function(e) {
+     if (e.keyCode == 27) { // escape key 
+        href = getRootUrl(); //get home page
+        exitPage(href);
+      }
+    if (e.keyCode == 37) { // left arrow key
+      href = $("a.prev").attr('href');//get href from previous buttom
+      window.location = getRootUrl();
+    }
+    if (e.keyCode == 39) { // right arrow key
+      href = $("a.next").attr('href');//get href from previous buttom
+      window.location = getRootUrl();
+    }
+  });
+
+function getRootUrl() {
+  return window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/';
+}
+
+var timing = 800;
+function exitPage ( href ) {
+  $("body").animate({opacity: 0}, timing/2);
+  setTimeout(function() {window.location = href}, timing/2);
+}
+
+$("a").click(function ( event ){
+ event.preventDefault();
+ href = $(this).attr('href');
+ exitPage(href);
 });
 
 });
