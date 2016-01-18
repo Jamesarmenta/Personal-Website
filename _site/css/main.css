@@ -5,6 +5,9 @@ body {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 16px; }
+  @media (max-width: 1000px) {
+    body {
+      font-size: 12px; } }
 
 a, a:visited {
   color: black;
