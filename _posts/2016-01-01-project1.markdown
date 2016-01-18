@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  "Project 1!"
+permalink: project1
 featuredimage: project1.jpg
 toolsused: Jekyll, SCSS, Jade
 details:

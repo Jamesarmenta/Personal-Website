@@ -204,3 +204,32 @@ h1.quote{
 		@media ($mobile) {width:100%; height: auto;}
 	}
 }
+
+////// 404 ERROR
+#error
+{
+  position: absolute;
+  @include tblr();
+  width: 100%; height: 100%;
+  background-color: #FF7262;
+  background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#FFDD89, #FF7262); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFDD89, #FF7262); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFDD89, #FF7262); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFDD89, #FF7262); /* Standard syntax */
+}
+
+#error404
+{
+  position: absolute;
+  max-height: 11em;
+  @include tblr();
+  
+  color: white;
+  text-align: center;
+  h1{font-size: 8em;}
+  h2{font-size: 1em;}
+  h3{font-size: .8em;}
+  a, a:visited{color: white; text-decoration: none;}
+  a:hover {text-decoration: underline;}
+}

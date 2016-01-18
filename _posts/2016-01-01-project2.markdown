@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  "Project 2!"
+permalink: project2
 featuredimage: project2.jpg
 toolsused: Photoshop, Illustrator
 ---
