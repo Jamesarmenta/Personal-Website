@@ -3,8 +3,8 @@ layout: home
 ---
 <div id="projectWrapper">
   {% for post in site.posts %}
-  <a href=".{{ post.url }}">
-    <img src="./images/{{ post.featuredimage }}" class="project" alt="{{ post.title }}">
+  <a href="/{{ post.url }}">
+    <img src="/images/{{ post.featuredimage }}" class="project" alt="{{ post.title }}">
   </a>
   {% endfor %}
 
