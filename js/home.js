@@ -1,10 +1,10 @@
 $(window).bind("pageshow", function(event) {
     if (event.originalEvent.persisted) {
-        window.location.reload() 
+        window.location.reload(); 
     }
 });
 
-$("body").imagesLoaded( function() {
+$(window).load(function(){
   
 // random postion function
  var intoPosition = function(){
