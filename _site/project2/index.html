@@ -25,9 +25,10 @@
 	<script type="text/javascript">
 		document.write(
 			"<style type='text/css'>" +
-			"body { opacity: 0; }" +
+			"body { opacity: 0; -moz-opacity:0; }" +
 			"</style>"
 			);
+		window.onunload = function(){}; 
 	</script>
 	<script src='http://cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.parallax-scroll.js'></script>
 	<script src="/js/project.js"></script>
@@ -46,7 +47,7 @@
 </head>
 
 
-<body>
+<body onunload="">
 
 	<header>
   <nav>
