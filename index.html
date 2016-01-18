@@ -1,10 +1,24 @@
 ---
-layout: idx
+layout: home
 ---
+<div id="projectWrapper">
+  {% for post in site.posts %}
+  <a href=".{{ post.url }}">
+    <img src="./images/{{ post.featuredimage }}" class="project" alt="{{ post.title }}">
+  </a>
+  {% endfor %}
 
-<div id="title">
-  <h1>James Armenta</h1>
-  <div id="subtitle">
-    <h2>{{ site.jobtitle }}</h2>
-  </div>
+  <h2 class="project email"><a href="#email" alt="Email Me" class="fun">&#9993&#xFE0E;</a>
+    <div id="email"></div>
+  </h2>
+
+  <h2 class="project about"><a href="#about" alt="About Me" class="fun">&#9786&#xFE0E;</a>
+    <div id="about"></div>
+  </h2>
+
+  <h2 class="project shuffle"><a href="#shuffle" alt="Shuffle" class="fun">&#8635&#xFE0E;</a></h2>
+
+  <h2 class="project weather"><a href="#weather" alt="Sunset" class="fun">&#9728&#xFE0E; </a>
+    <div id="weather"></div>
+  </h2>
 </div>

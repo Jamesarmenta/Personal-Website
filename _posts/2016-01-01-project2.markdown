@@ -1,0 +1,7 @@
+---
+layout: project
+title:  "Project 2!"
+featuredimage: project2.jpg
+toolsused: Photoshop, Illustrator
+---
+ THIS ALL BE CONTENT 2 DOG

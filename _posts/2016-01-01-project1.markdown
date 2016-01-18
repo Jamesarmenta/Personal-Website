@@ -1,0 +1,17 @@
+---
+layout: project
+title:  "Project 1!"
+featuredimage: project1.jpg
+toolsused: Jekyll, SCSS, Jade
+details:
+- <h1> this is probably first </h1>
+- DOG?
+- <img src="http://animalpetdoctor.homestead.com/acat1.jpg" class="lax">
+- <img src="http://animalpetdoctor.homestead.com/acat1.jpg" class="lax">
+- good?
+- <img src="http://animalpetdoctor.homestead.com/acat1.jpg" class="lax">
+- <img src="http://animalpetdoctor.homestead.com/acat1.jpg" class="lax">
+---
+This is the project description. Lorem ipsum or whatever.   
+<br/>
+Should be a new paragraph here. How does this feel? Incredible. Almost there.

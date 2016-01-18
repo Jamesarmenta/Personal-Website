@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+	{% include header.html %}
+	<div id="mainColumn">
+		<ul>
+			<li id="details">
+				<h1>{{ page.title }}</h1>
+				<br/>
+				<p>{{ content }}</p>
+				<span alt="Tools Used" class="tools">
+					<br/>
+					<p>&#9998; {{ page.toolsused }}</p>
+				</span>
+				<br/>
+				{% if page.previous.url %}
+				<a class="prev" href=".{{page.previous.url}}">&laquo; Previous </a> / 
+				{% endif %}
+				{% if page.next.url %}
+				<a class="next" href=".{{page.next.url}}">Next &raquo;</a>
+				{% endif %}
+			</li>
+			{% for detail in page.details %}
+			<li>{{ detail }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+</body>
+
+</html>

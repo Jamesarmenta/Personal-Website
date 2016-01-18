@@ -1,0 +1,12 @@
+# Site settings
+title: James Armenta
+email: hello@jamesarmenta.com
+description: > # this means to ignore newlines until "baseurl:"
+  James Armenta is a designer and junior developer from California
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jamesarmenta.com" # the base hostname & protocol for your site
+github_username:  jamesarmenta
+
+# Build settings
+markdown: kramdown
+permalink: /:title.html
