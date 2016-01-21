@@ -137,6 +137,8 @@ var intoPosition = function(){
 
 //WEATHER
 var weather = function() {
+  
+  $("#weather").html("loading...");
 
   $.get("http://ipinfo.io", function(response) {
     var city = response.city + ", " + response.region;
@@ -156,7 +158,7 @@ var weather = function() {
       if(hour<0){hour = hour + 12;}
       var minute = sunset.substring(3,5);
       
-      $("#weather").append("Sunset is at " + hour + ":" + minute + "pm in " + city);
+      $("#weather").html("Sunset is at " + hour + ":" + minute + "pm in " + city);
       
     }, "jsonp");
      

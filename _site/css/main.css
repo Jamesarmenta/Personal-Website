@@ -38,7 +38,8 @@ h6 {
   max-width: 22%; }
   @media (max-width: 600px) {
     .project, img.project, img.project.layer {
-      max-width: 28%; } }
+      max-width: 28%;
+      max-height: 30vh; } }
 
 h2.project {
   max-width: 90px;
