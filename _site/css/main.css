@@ -76,7 +76,7 @@ a.fun {
   font-size: 2em; }
   @media (max-width: 600px) {
     a.fun {
-      font-size: 1em; } }
+      font-size: 1.2em; } }
 
 #weather, #email, #about {
   font-size: .8em; }
