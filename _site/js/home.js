@@ -53,6 +53,7 @@ var intoPosition = function(){
           }
           if(attempt == attemptsAllowed)
           {
+          		ga('send', 'event', 'BUSTED', 'error', 'home');
             imgBox.css("visibility", "hidden");
           }
         }
