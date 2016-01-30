@@ -1,8 +1,12 @@
-$(window).bind("pageshow", function(event) {
+$(window).bind("pageshow", function(event) {//Safari fix for buggy reloads
   if (event.originalEvent.persisted) {
     window.location.reload(); 
   }
 });
+
+$(function() {
+    $( ".project" ).draggable();
+  });
 
 $(window).load(function() {
   
@@ -68,9 +72,7 @@ var intoPosition = function(){
       left: coords.x + 'px'
     }, projectSpeed, 'easeOutExpo');
     
-  });
-
-};
+    });};
 
   //ADDS DATA-DEPTH AND CLASS "LAYER" FOR PARALLAX
   //ASSIGNS Z-INDEX BASED ON SIZE
