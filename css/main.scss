@@ -173,6 +173,8 @@ li#details
 	line-height: 1.5em;
 	text-align: left;
 
+	h1{font-weight: 600;}
+
 	@media ($mobile) {
 		position: relative;
 		width: 100%;

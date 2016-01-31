@@ -158,6 +158,8 @@ li#details {
   font-size: .6em;
   line-height: 1.5em;
   text-align: left; }
+  li#details h1 {
+    font-weight: 600; }
   @media (max-width: 600px) {
     li#details {
       position: relative;
