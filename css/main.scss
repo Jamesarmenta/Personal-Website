@@ -205,8 +205,8 @@ q{
 }
 
 @for $i from 1 through 10 {
-	.c#{$i} { max-width: $i*10%; height: auto; 
-		@media ($mobile) {max-width:100%; height: auto;}
+	.c#{$i} { max-width: $i*10% !important; height: auto; 
+		@media ($mobile) {max-width:100% !important;; height: auto;}
 	}
 }
 .right{float: right;}
