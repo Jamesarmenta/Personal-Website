@@ -261,6 +261,12 @@ q {
       max-width: 100%;
       height: auto; } }
 
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
 #error {
   position: absolute;
   margin: auto;
