@@ -182,7 +182,7 @@ q {
   background-color: pink; }
 
 .c1 {
-  width: 10%;
+  max-width: 10%;
   height: auto; }
   @media (max-width: 600px) {
     .c1 {
@@ -190,7 +190,7 @@ q {
       height: auto; } }
 
 .c2 {
-  width: 20%;
+  max-width: 20%;
   height: auto; }
   @media (max-width: 600px) {
     .c2 {
@@ -198,7 +198,7 @@ q {
       height: auto; } }
 
 .c3 {
-  width: 30%;
+  max-width: 30%;
   height: auto; }
   @media (max-width: 600px) {
     .c3 {
@@ -206,7 +206,7 @@ q {
       height: auto; } }
 
 .c4 {
-  width: 40%;
+  max-width: 40%;
   height: auto; }
   @media (max-width: 600px) {
     .c4 {
@@ -214,7 +214,7 @@ q {
       height: auto; } }
 
 .c5 {
-  width: 50%;
+  max-width: 50%;
   height: auto; }
   @media (max-width: 600px) {
     .c5 {
@@ -222,7 +222,7 @@ q {
       height: auto; } }
 
 .c6 {
-  width: 60%;
+  max-width: 60%;
   height: auto; }
   @media (max-width: 600px) {
     .c6 {
@@ -230,7 +230,7 @@ q {
       height: auto; } }
 
 .c7 {
-  width: 70%;
+  max-width: 70%;
   height: auto; }
   @media (max-width: 600px) {
     .c7 {
@@ -238,7 +238,7 @@ q {
       height: auto; } }
 
 .c8 {
-  width: 80%;
+  max-width: 80%;
   height: auto; }
   @media (max-width: 600px) {
     .c8 {
@@ -246,7 +246,7 @@ q {
       height: auto; } }
 
 .c9 {
-  width: 90%;
+  max-width: 90%;
   height: auto; }
   @media (max-width: 600px) {
     .c9 {
@@ -254,7 +254,7 @@ q {
       height: auto; } }
 
 .c10 {
-  width: 100%;
+  max-width: 100%;
   height: auto; }
   @media (max-width: 600px) {
     .c10 {
