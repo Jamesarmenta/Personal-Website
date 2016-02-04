@@ -201,7 +201,7 @@ q{
 
 @for $i from 1 through 10 {
 	.c#{$i} { width: $i*10%; height: auto; 
-		@media ($mobile) {width:100%; height: auto;}
+		@media ($mobile) {max-width:100%; height: auto;}
 	}
 }
 
