@@ -62,7 +62,7 @@ h2.project.shuffle {
   max-height: 50px; }
 
 h2.project.about {
-  max-width: 94px;
+  max-width: 100px;
   max-height: 120px; }
   @media (max-width: 600px) {
     h2.project.about {
