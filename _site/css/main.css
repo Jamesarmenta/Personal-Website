@@ -186,7 +186,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c1 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c2 {
@@ -194,7 +194,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c2 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c3 {
@@ -202,7 +202,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c3 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c4 {
@@ -210,7 +210,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c4 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c5 {
@@ -218,7 +218,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c5 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c6 {
@@ -226,7 +226,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c6 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c7 {
@@ -234,7 +234,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c7 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c8 {
@@ -242,7 +242,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c8 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c9 {
@@ -250,7 +250,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c9 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 .c10 {
@@ -258,7 +258,7 @@ q {
   height: auto; }
   @media (max-width: 600px) {
     .c10 {
-      width: 100%;
+      max-width: 100%;
       height: auto; } }
 
 #error {
