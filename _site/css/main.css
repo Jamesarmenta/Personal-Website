@@ -270,9 +270,9 @@ q {
   float: left; }
 
 .shadow {
-  -webkit-box-shadow: 1px 1px 4px 0px #eeeeee;
-  -moz-box-shadow: 1px 1px 4px 0px #eeeeee;
-  box-shadow: 1px 1px 4px 0px #eeeeee; }
+  -webkit-box-shadow: 1px 1px 4px 0px #e1e1e1;
+  -moz-box-shadow: 1px 1px 4px 0px #e1e1e1;
+  box-shadow: 1px 1px 4px 0px #e1e1e1; }
 
 #error {
   position: absolute;
