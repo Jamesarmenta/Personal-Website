@@ -48,10 +48,11 @@ h6 { font-size: .75em; }
   margin: auto; //this is removed with jquery
   top: 0; bottom: 0; left: 0; right: 0;
   
-  max-width: 22%;
+  max-width: 22%; height: auto;
   @media ($mobile) {
   	max-width: 28%;
   	max-height: 30vh;
+  	height: auto;
   }
 }
 h2.project
