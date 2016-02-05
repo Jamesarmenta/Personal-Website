@@ -137,6 +137,9 @@ h1.home {
       max-height: 90vh;
       margin: auto;
       box-sizing: border-box; }
+    @media (max-width: 1000px) {
+      #mainColumn li {
+        max-height: none; } }
   @media (max-width: 1000px) {
     #mainColumn li {
       margin-bottom: 16px; } }
