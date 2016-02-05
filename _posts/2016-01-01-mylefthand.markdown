@@ -5,9 +5,9 @@ permalink: mylefthand
 featuredimage: mylefthand.jpg
 toolsused: Photoshop, Illustrator
 details:
-- <img src="/images/mylefthand/allnewtypeface.png" class="lax c5"><img src="/images/mylefthand/bigdealno.png" class="lax c5">
+- <img src="/images/mylefthand/allnewtypeface.png" class="lax c5"><img src="/images/mylefthand/bigdealno.png" class="lax c5 shadiw">
 - good?
-- <img src="/images/mylefthand/peoplelikeugly.png" class="lax c5"><img src="/images/mylefthand/peoplelikeuglycloseup.jpg" class="lax c6 right">
+- <img src="/images/mylefthand/peoplelikeugly.png" class="lax c5 shadow"><img src="/images/mylefthand/peoplelikeuglycloseup.jpg" class="lax c6 right shadow">
 - <img src="/images/mylefthand/youdoyoubestmockup.jpg" class="lax">
 ---
 This is the project description. Lorem ipsum or whatever.   

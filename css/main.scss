@@ -128,7 +128,6 @@ h1.home {
 #mainColumn
 {
 	width: 80%;
-	overflow: hidden;
 	::-webkit-scrollbar { 
     display: none; 
 	}
@@ -211,6 +210,11 @@ q{
 }
 .right{float: right;}
 .left{float: left;}
+.shadow{
+	-webkit-box-shadow: 1px 1px 4px 0px rgba(238,238,238,1);
+	-moz-box-shadow: 1px 1px 4px 0px rgba(238,238,238,1);
+	box-shadow: 1px 1px 4px 0px rgba(238,238,238,1);
+}
 ////// 404 ERROR
 #error
 {
