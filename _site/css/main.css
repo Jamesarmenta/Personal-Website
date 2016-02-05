@@ -121,7 +121,8 @@ h1.home {
   font-size: .2em; }
 
 #mainColumn {
-  width: 80%; }
+  width: 80%;
+  overflow: hidden; }
   #mainColumn ::-webkit-scrollbar {
     display: none; }
   #mainColumn li {
