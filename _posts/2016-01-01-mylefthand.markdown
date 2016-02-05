@@ -5,10 +5,10 @@ permalink: mylefthand
 featuredimage: mylefthand.jpg
 toolsused: Photoshop, Illustrator
 details:
-- <li><img src="/images/mylefthand/allnewtypeface.png" class="lax c5"><img src="/images/mylefthand/bigdealno.png" class="lax c5"></li>
+- <img src="/images/mylefthand/allnewtypeface.png" class="lax c5"><img src="/images/mylefthand/bigdealno.png" class="lax c5">
 - good?
-- <li><img src="/images/mylefthand/peoplelikeugly.png" class="lax c5"><img src="/images/mylefthand/peoplelikeuglycloseup.jpg" class="lax c6 right"></li>
-- <img src="http://animalpetdoctor.homestead.com/acat1.jpg" class="lax">
+- <img src="/images/mylefthand/peoplelikeugly.png" class="lax c5"><img src="/images/mylefthand/peoplelikeuglycloseup.jpg" class="lax c6 right">
+- <img src="/images/mylefthand/youdoyoubestmockup.jpg" class="lax">
 ---
 This is the project description. Lorem ipsum or whatever.   
 <br/>
