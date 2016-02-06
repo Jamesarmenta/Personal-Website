@@ -1,7 +1,0 @@
----
-layout: project
-title:  "Project 3!"
-permalink: project3
-featuredimage: project2.jpg
----
- THIS ALL BE CONTENT 3 DOG
