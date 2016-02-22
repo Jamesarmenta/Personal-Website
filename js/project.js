@@ -58,7 +58,7 @@ function exitPage ( href ) {
   }
 }
 
-$("a").click(function ( event ){
+$("a[target!='_blank']").click(function ( event ){
  event.preventDefault();
  href = $(this).attr('href');
  exitPage(href);
