@@ -156,8 +156,9 @@ var weather = function() {
      var seconds = $.now()/1000;
      
      $.getJSON("https://maps.googleapis.com/maps/api/timezone/json?location="+lat+","+lon+"&timestamp="+seconds+"&callback=timezone&key=AIzaSyB7ZmQMmam7p0RhClNy3-CWHqdzjJO7IEo", function(timezone) {
-      var offset = timezone.rawOffset / 3600;
+      var offset = (timezone.rawOffset+timezone.dstOffset) / 3600;
       var hour = parseInt(sunset.substring(0,2))+offset;
+      if(hour>12){hour = hour - 12;}
       if(hour<0){hour = hour + 12;}
       var minute = sunset.substring(3,5);
       
