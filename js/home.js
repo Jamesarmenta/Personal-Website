@@ -145,6 +145,7 @@ var weather = function() {
 
   $.get("http://ipinfo.io", function(response) {
     var city = response.city + ", " + response.region;
+    if(response.city == response.region){city = response.city + ", "+ response.country};
     var latlon = response.loc.split(",");
     var lat = latlon[0];
     var lon = latlon[1];
