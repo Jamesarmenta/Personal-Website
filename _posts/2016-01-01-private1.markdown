@@ -1,7 +1,0 @@
----
-layout: project
-title:  "Private"
-permalink: private1
-featuredimage: private1.jpg
----
-This project is currently set to private. 
