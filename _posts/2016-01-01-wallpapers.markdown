@@ -22,4 +22,8 @@ details:
 - <a target="_blank" href="/images/wallpapers/fullsize/xray.jpg" download><img src="/images/wallpapers/xray.jpg" class="lax shadow"></a>
 - <a target="_blank" href="/images/wallpapers/fullsize/hello.jpg" download><img src="/images/wallpapers/hello.jpg" class="lax"></a>
 ---
-I have a different desktop wallpaper every day and I think you should too. All wallpapers sized at 2880x1800 and created using public domain photos. Click image to download. 
+I have a different desktop wallpaper every day and I think you should too. 
+<br><br>
+All wallpapers sized at 2880x1800 and created using public domain photos. 
+<br><br>
+Click image to download. 
