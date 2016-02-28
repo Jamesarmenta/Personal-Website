@@ -2,11 +2,14 @@
 layout: project
 title:  "Logos"
 permalink: logos
-featuredimage: logos.jpg
+featuredimage: logos.png
 toolsused: Illustrator, Photoshop
 details:
-- <img src="/images/selectedposters/ampersandaltmockup.jpg" class="lax">
-- <img src="/images/selectedposters/ampersandmockup.jpg" class="lax">
-- <img src="/images/selectedposters/designthinking.png" class="lax c4">&nbsp;&nbsp;<img src="/images/selectedposters/harvestdinner.jpg" class="lax c4">
+- <img src="/images/logos/breakbeats.jpg" class="lax">
+- <img src="/images/logos/finerthings.jpg" class="lax">
+- <img src="/images/logos/mill.jpg" class="lax c4">&nbsp;&nbsp;<img src="/images/logos/sglobe.jpg" class="lax c4">
+- <img src="/images/logos/desert.jpg" class="lax">
+- <img src="/images/logos/unpack.jpg" class="lax">
+- <img src="/images/logos/ram.png" class="lax c4">&nbsp;&nbsp;<img src="/images/logos/skidmore.png" class="lax c4 shadow">
 ---
 Logos, marks, etc. 
