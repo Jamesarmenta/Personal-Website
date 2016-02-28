@@ -13,7 +13,7 @@
 // MACROS
 $base-font-family: 'Roboto Mono', monospace, Helvetica, sans-serif;
 $base-font-weight: 400;
-$base-font-size:   16px;
+$base-font-size:   16px !important;
 
 $spacing-unit:     16px;
 
@@ -105,8 +105,12 @@ nav {
 	box-sizing: border-box;
 	z-index: 999;
 	font-size: .6em;
+}
 
-	a:hover{text-decoration: underline;}
+.externalproject
+{
+	font-weight: $base-font-weight+200;
+	&:hover {text-decoration: underline;}
 }
 
 h1.home {

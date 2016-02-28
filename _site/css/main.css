@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Mono", monospace, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 16px; }
+  font-size: 16px !important; }
 
 a, a:visited {
   color: black;
@@ -103,7 +103,10 @@ nav {
   box-sizing: border-box;
   z-index: 999;
   font-size: .6em; }
-  nav a:hover {
+
+.externalproject {
+  font-weight: 600; }
+  .externalproject:hover {
     text-decoration: underline; }
 
 h1.home {
