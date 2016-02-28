@@ -44,7 +44,7 @@ h6 {
       height: auto; } }
 
 h2.project {
-  max-width: 90px;
+  max-width: 100px;
   max-height: 90px;
   overflow: visible; }
   @media (max-width: 600px) {
