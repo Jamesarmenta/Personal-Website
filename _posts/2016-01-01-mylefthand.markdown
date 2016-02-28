@@ -2,7 +2,7 @@
 layout: project
 title:  "My Left Hand"
 permalink: mylefthand
-featuredimage: mylefthand.jpg
+featuredimage: mylefthand.png
 toolsused: My Left Hand, Photoshop
 details:
 - <img src="/images/mylefthand/justletitgomockup.jpg" class="lax">

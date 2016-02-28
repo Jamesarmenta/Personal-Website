@@ -9,14 +9,13 @@
 	<meta name="robots" content="index,follow,archive"/>
 
 
-	<title>James Armenta</title>
-	<meta name="description" content="James Armenta is a designer and junior developer from California
-">
+	<title>James Armenta - Logos</title>
+	<meta name="description" content="Logos, marks, etc.">
 	<link rel="shortcut icon" type="image/png" href="/favicon.png">
 
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://jamesarmenta.com/404.html">
+	<link rel="canonical" href="http://jamesarmenta.com/logos">
 	<link rel="shortcut icon" href="/images/favicon.png"/>
 	<link rel="icon" href="/images/favicon.png"/>
 
@@ -25,9 +24,16 @@
 	<script src='http://cdn.rawgit.com/louisremi/jquery-smartresize/master/jquery.debouncedresize.js' type="text/javascript"></script>
 	<script src='/js/retina.min.js' type="text/javascript"></script>
 	
-	<script src='http://cdn.rawgit.com/wagerfield/parallax/master/deploy/jquery.parallax.min.js' type="text/javascript"></script>
-	<script src="/js/home.js" type="text/javascript"></script>
-	<script src='http://cdn.rawgit.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.min.js' type="text/javascript"></script>
+	<script type="text/javascript">
+		document.write(
+			"<style type='text/css'>" +
+			"body { opacity: 0; -moz-opacity:0; }" +
+			"</style>"
+			);
+		window.onunload = function(){}; 
+	</script>
+	<script src='http://cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.parallax-scroll.js' type="text/javascript"></script>
+	<script src="/js/project.js" type="text/javascript"></script>
 	
 
 	<script>
@@ -45,13 +51,40 @@
 
 <body onunload="">
 
-	<div id="error">
-  <div id="error404">
-    <h1>&#9785&#xFE0E;</h1>
-    <h2>404 Error</h2><br/><a href="/">
-      <h3>Go Home</h3></a>
-  </div>
-</div>
+	<header>
+  <nav>
+    <a href="/">
+      <h1 class="home">	&#10005;&#xFE0E;
+        <!--<div class="back">home</div>-->
+      </h1>
+    </a>
+  </nav>
+</header>
+
+	<div id="mainColumn">
+		<ul>
+			<li id="details">
+				<h1>Logos</h1>
+				<br/>
+				<p><p>Logos, marks, etc.</p>
+</p>
+				<span alt="Tools Used" class="tools">
+					<br/>
+					<p>&#9998; Illustrator, Photoshop</p>
+				</span>
+				<br/>
+				
+			</li>
+			
+			<li><img src="/images/selectedposters/ampersandaltmockup.jpg" class="lax"></li>
+			
+			<li><img src="/images/selectedposters/ampersandmockup.jpg" class="lax"></li>
+			
+			<li><img src="/images/selectedposters/designthinking.png" class="lax c4">&nbsp;&nbsp;<img src="/images/selectedposters/harvestdinner.jpg" class="lax c4"></li>
+			
+			<li>&#9786&#xFE0E;</li>
+		</ul>
+	</div>
 
 </body>
 
