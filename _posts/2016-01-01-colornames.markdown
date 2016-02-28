@@ -4,7 +4,7 @@ title:  "Color Names"
 permalink: colornames
 featuredimage: colornames.gif
 toolsused: Jade, SCSS, jQuery
-externallink: http://cdn.rawgit.com/jamesarmenta/xkcd-colors/master/index.html
+externallink: http://rawgit.com/jamesarmenta/xkcd-colors/master/index.html
 details:
 - <img src="/images/colornames/cloudy.png" class="lax">
 - <img src="/images/colornames/lime.png" class="lax">
