@@ -17,11 +17,8 @@
 					<p>&#9998; {{ page.toolsused }}</p>
 				</span>
 				<br/>
-				{% if page.previous.url %}
-				<a class="prev" href="{{page.previous.url}}/">&larr; Previous </a> / 
-				{% endif %}
-				{% if page.next.url %}
-				<a class="next" href="{{page.next.url}}/">Next &rarr;</a>
+				{% if page.externallink %}
+				<a class="prev" href="{{page.previous.url}}/">{{page.externallink}}&#8599;&#xFE0E;</a> / 
 				{% endif %}
 			</li>
 			{% for detail in page.details %}
