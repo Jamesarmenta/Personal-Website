@@ -2,5 +2,6 @@
 layout: project
 title:  "Color Names"
 permalink: colornames
-featuredimage: colornames.jpg
+featuredimage: colornames.gif
+externallink: jamesarmenta.github.io/xkcd-colors/
 ---
