@@ -2,7 +2,7 @@
 layout: project
 title:  "Selected Posters"
 permalink: selectedposters
-featuredimage: selectedposters.jpg
+featuredimage: selectedposters.png
 toolsused: Illustrator, Photoshop, InDesign
 details:
 - <img src="/images/selectedposters/ampersandaltmockup.jpg" class="lax">
