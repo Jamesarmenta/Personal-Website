@@ -67,6 +67,7 @@ var intoPosition = function(){
     positions.push(coords);
     
     imgBox.animate({
+      position: absolute,
       margin: 0,
       top: coords.y + 'px',
       left: coords.x + 'px'
