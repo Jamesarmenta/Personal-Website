@@ -67,7 +67,6 @@ var intoPosition = function(){
     positions.push(coords);
     
     imgBox.animate({
-      position: absolute,
       margin: 0,
       top: coords.y + 'px',
       left: coords.x + 'px'
@@ -81,6 +80,7 @@ var intoPosition = function(){
     $('.project').each(function() {
       $(this).attr("data-depth", ($(this).outerWidth()*$(this).outerHeight())/80000)-($(window).width()*.01);
       $(this).css("z-index", Math.round(($(this).outerWidth()*$(this).outerHeight())/1000));
+      $(this).css("position","absolute");
       $(this).addClass("layer");
     });
     $('h2.project').each(function() {
