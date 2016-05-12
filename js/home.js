@@ -6,7 +6,6 @@ $(window).bind("pageshow", function(event) {//Safari fix for buggy reloads
 
 $(function() {
     $( ".project" ).draggable();
-    $("img.project").css("position","absolute !important");
   });
 
 $(window).load(function() {
@@ -81,7 +80,6 @@ var intoPosition = function(){
     $('.project').each(function() {
       $(this).attr("data-depth", ($(this).outerWidth()*$(this).outerHeight())/80000)-($(window).width()*.01);
       $(this).css("z-index", Math.round(($(this).outerWidth()*$(this).outerHeight())/1000));
-      //$(this).css("position","absolute !important");
       $(this).addClass("layer");
     });
     $('h2.project').each(function() {
@@ -117,6 +115,7 @@ var intoPosition = function(){
   $("#projectWrapper").animate({opacity:1}, 1000);
   setParallax();
   intoPosition();
+  $("img.project").attr("style","position: absolute !important;");
   
   
   //CLICKS
