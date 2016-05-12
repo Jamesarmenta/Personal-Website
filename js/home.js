@@ -80,7 +80,7 @@ var intoPosition = function(){
     $('.project').each(function() {
       $(this).attr("data-depth", ($(this).outerWidth()*$(this).outerHeight())/80000)-($(window).width()*.01);
       $(this).css("z-index", Math.round(($(this).outerWidth()*$(this).outerHeight())/1000));
-      $(this).css("position","absolute");
+      $(this).css("position","absolute !important");
       $(this).addClass("layer");
     });
     $('h2.project').each(function() {
