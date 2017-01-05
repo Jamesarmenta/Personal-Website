@@ -121,7 +121,7 @@ var intoPosition = function(){
   //CLICKS
   $("a[href$='#shuffle']").click(intoPosition);
   $("a[href$='#weather']").one('click', function(){ weather(); });
-  $("a[href$='#email']").one('click', function(){ $("#email").append("hello@jamesarmenta.com"); });
+  $("a[href$='#email']").one('click', function(){ $("#email").append("armentajames@gmail.com"); });
   $("a[href$='#about']").one('click', function(){ $("#about").append("James is a designer <wbr>& junior developer <wbr>from California"); });
 
 
