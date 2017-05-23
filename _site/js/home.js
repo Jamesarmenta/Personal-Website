@@ -88,18 +88,15 @@ var intoPosition = function(){
     });
     
    //PARALLAX ////////////
-   $('#projectWrapper').parallax({
-    calibrateX: false,
+   var projectWrapper = document.getElementById('projectWrapper');
+    var parallax = new Parallax(projectWrapper, {
+      calibrateX: false,
     calibrateY: false,
     invertX: true,
     invertY: true,
     limitX: 70,
     limitY: 70,
-  //scalarX: $("#projectWrapper").outerWidth()*.01,
-  //scalarY: $("#projectWrapper").outerWidth()*.01,
-  // frictionX: 0.1,
-  // frictionY: 0.9
-});
+    });
  };
  
   //SMART RESIZE
