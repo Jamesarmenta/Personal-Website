@@ -98,6 +98,7 @@ var intoPosition = function(){
     invertY: true,
     limitX: 70,
     limitY: 70,
+    pointerEvents: true
     });
  };
  
