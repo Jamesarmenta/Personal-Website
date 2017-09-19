@@ -122,7 +122,7 @@ var intoPosition = function(){
   $("a[href$='#shuffle']").click(intoPosition);
   $("a[href$='#weather']").one('click', function(){ weather(); });
   $("a[href$='#email']").one('click', function(){ $("#email").append("armentajames@gmail.com"); });
-  $("a[href$='#about']").one('click', function(){ $("#about").append("James is a designer <wbr>& junior developer <wbr>from California"); });
+  $("a[href$='#about']").one('click', function(){ $("#about").append("James is a <wbr>full-stack developer <wbr>from California"); });
 
 
   var timing = 1000;
