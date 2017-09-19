@@ -1,0 +1,13 @@
+---
+layout: project
+title:  "Sixfold Symmetry"
+permalink: sixfold
+featuredimage: sixfold.gif
+toolsused: Javascript, Jade, SCSS, Node, Express, MongoDB
+externallink: http://sixfoldsymmetry.herokuapp.com
+details:
+- <h2> Coming soon :) </h2>
+---
+During my senior year at Skidmore College, I was fortunate enough to work with the Tang Museum on a website for the exhbition 'Sixfold Symmetry: Patterns in Art and Science'. The interdisciplinary exhibition focused the ways in which humans observe, create, and manipulate patterns. To reflect this, the site's layout is altered by the patterns of its visitors. 
+<br><br>
+Exhibiton items are represented by three colored squares representing the three most common colors in the item, sized by their prominence. On the home page, items are sorted from least visited to most. An item's position on the page horizontally reflects how long the average user views the piece's detail page. Such stats are listed on each item's detail page. 
