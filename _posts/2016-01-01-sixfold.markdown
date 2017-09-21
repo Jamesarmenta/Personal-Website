@@ -3,7 +3,7 @@ layout: project
 title:  "Sixfold Symmetry"
 permalink: sixfold
 featuredimage: sixfold.gif
-toolsused: Javascript, Jade / Pug, SASS, Node, Express, MongoDB
+toolsused: HTML/CSS, Jade/PUG, SASS, Javascript, jQuery, Node, Express, MongoDB
 externallink: http://sixfoldsymmetry.herokuapp.com
 details:
 - <h2>Process</h2>
@@ -28,6 +28,6 @@ Last Visit: On each GET request for an item's content, a timestamp is recorded. 
 - <img src="/images/sixfold/irl2.jpg" class="lax">
 - <img src="/images/sixfold/irl3.jpg" class="lax">
 ---
-I was fortunate enough to work with the Tang Museum on a website for the exhbition 'Sixfold Symmetry: Patterns in Art and Science'. The interdisciplinary exhibition focused the ways in which humans observe, create, and manipulate patterns. To reflect this, the site's layout is altered by the patterns of its visitors. 
+I was fortunate enough to work with the Tang Museum on a website for the exhbition 'Sixfold Symmetry: Patterns in Art and Science'. The interdisciplinary exhibition focused on the ways in which humans observe, create, and manipulate patterns. To reflect this, the site's layout is altered by the patterns of its visitors. 
 <br><br>
-Exhibiton items are represented by three colored squares representing the three most common colors in the item, sized by their prominence. On the home page, items are sorted from least visited to most. An item's position on the page horizontally reflects how long the average user views the piece's detail page. Such stats are listed on each item's detail page. 
+Exhibiton items are represented by three-colored squares representing the three most common colors in the item, sized by their prominence. On the home page, items are sorted from least visited to most. An item's position on the page horizontally reflects how long the average user views the piece's detail page. Such stats are listed on each item's detail page. 
