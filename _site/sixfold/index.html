@@ -82,17 +82,17 @@ Exhibiton items are represented by three colored squares representing the three 
 			
 			<li><h2>Process</h2></li>
 			
-			<li>{"<p>From the time of conception it was clear that the site's layout should both influence and be influenced by the patterns of user interaction. Basic patterns to track were easily identifiable"=>"number of visits, duration of visit, time since last visit. Determining the way the site could display these patterns was the first obstacle to overcome.</p>"}</li>
+			<li>From the time of conception it was clear that the site's layout should both influence and be influenced by the patterns of user interaction. Basic patterns to track were easily identifiable: number of visits, duration of visit, time since last visit. Determining the way the site could display these patterns was the first obstacle to overcome.</li>
 			
-			<li><img src="/images/sixfold/process1.jpg" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/process2.jpg" class="lax c4"></li>
+			<li><img src="/images/sixfold/process1.gif" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/process2.gif" class="lax c4"></li>
 			
-			<li><img src="/images/sixfold/process3.jpg" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/process4.jpg" class="lax c4"></li>
+			<li><img src="/images/sixfold/process3.gif" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/process4.gif" class="lax c4"></li>
 			
-			<li><p>Most options felt too structured, reminiscent of graphs and infographics. Others too organic. Ultimately, we decided that squares scattered, rather than fixed on a grid, felt like a natural balance between the two.</p></li>
+			<li>Most options felt too structured, reminiscent of graphs and infographics. Others too organic. Ultimately, we decided that squares scattered, rather than fixed on a grid, felt like a natural balance between the two.</li>
 			
 			<li><h2>Colors</h2></li>
 			
-			<li><p>Each item in the exhibition had to be analyzed using a single point of measurement. As an interdisciplinary exhibition, with pieces composed from a wide variety of mediums, color was one of the few factors that could be measured equally. I wrote a script that extracted the three most common colors of an image and their percentage of the photo. The script was then run on a photo of each exhibition item and the results used to create CSS styles for each piece.</p></li>
+			<li>Each item in the exhibition had to be analyzed using a single point of measurement. As an interdisciplinary exhibition, with pieces composed from a wide variety of mediums, color was one of the few factors that could be measured equally. I wrote a script that extracted the three most common colors of an image and their percentage of the photo. The script was then run on a photo of each exhibition item and the results used to create CSS styles for each piece.</li>
 			
 			<li><img src="/images/sixfold/colors.png" class="lax"></li>
 			
@@ -100,15 +100,15 @@ Exhibiton items are represented by three colored squares representing the three 
 			
 			<li><img src="/images/sixfold/mobile1.jpg" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/mobile2.jpg" class="lax c4"></li>
 			
-			<li><p>Statistics are tracked in MongoDB for each item using the following techniques:</p></li>
+			<li>Statistics are tracked in MongoDB for each item using the following techniques:</li>
 			
-			<li>{"<p>Views"=>"With each GET request for an item's content, the view count is increased.</p>"}</li>
+			<li>Views: With each GET request for an item's content, the view count is increased.</li>
 			
-			<li>{"<p>Your Views"=>"Each visit to an item's page increases a locally stored cookie on the user's browser.</p>"}</li>
+			<li>Your Views: Each visit to an item's page increases a locally stored cookie on the user's browser.</li>
 			
-			<li>{"<p>Average Visit"=>"The duration of each page visit is tracked per user. On unload or page change, the visit duration is POSTed to the server's API.</p>"}</li>
+			<li>Average Visit: The duration of each page visit is tracked per user. On unload or page change, the visit duration is POSTed to the server's API.</li>
 			
-			<li>{"<p>Last Visit"=>"On each GET request for an item's content, a timestamp is recorded. On any subsequent visit, the is computed and displayed. </p>"}</li>
+			<li>Last Visit: On each GET request for an item's content, a timestamp is recorded. On any subsequent visit, the is computed and displayed. </li>
 			
 			<li><img src="/images/sixfold/detailpage.jpg" class="lax"></li>
 			

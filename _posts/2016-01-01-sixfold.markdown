@@ -7,20 +7,20 @@ toolsused: Javascript, Jade / Pug, SASS, Node, Express, MongoDB
 externallink: http://sixfoldsymmetry.herokuapp.com
 details:
 - <h2>Process</h2>
-- <p>From the time of conception it was clear that the site's layout should both influence and be influenced by the patterns of user interaction. Basic patterns to track were easily identifiable: number of visits, duration of visit, time since last visit. Determining the way the site could display these patterns was the first obstacle to overcome.</p>
-- <img src="/images/sixfold/process1.jpg" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/process2.jpg" class="lax c4">
-- <img src="/images/sixfold/process3.jpg" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/process4.jpg" class="lax c4">
-- <p>Most options felt too structured, reminiscent of graphs and infographics. Others too organic. Ultimately, we decided that squares scattered, rather than fixed on a grid, felt like a natural balance between the two.</p>
+- "From the time of conception it was clear that the site's layout should both influence and be influenced by the patterns of user interaction. Basic patterns to track were easily identifiable: number of visits, duration of visit, time since last visit. Determining the way the site could display these patterns was the first obstacle to overcome."
+- <img src="/images/sixfold/process1.gif" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/process2.gif" class="lax c4">
+- <img src="/images/sixfold/process3.gif" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/process4.gif" class="lax c4">
+- "Most options felt too structured, reminiscent of graphs and infographics. Others too organic. Ultimately, we decided that squares scattered, rather than fixed on a grid, felt like a natural balance between the two."
 - <h2>Colors</h2>
-- <p>Each item in the exhibition had to be analyzed using a single point of measurement. As an interdisciplinary exhibition, with pieces composed from a wide variety of mediums, color was one of the few factors that could be measured equally. I wrote a script that extracted the three most common colors of an image and their percentage of the photo. The script was then run on a photo of each exhibition item and the results used to create CSS styles for each piece.</p>
+- "Each item in the exhibition had to be analyzed using a single point of measurement. As an interdisciplinary exhibition, with pieces composed from a wide variety of mediums, color was one of the few factors that could be measured equally. I wrote a script that extracted the three most common colors of an image and their percentage of the photo. The script was then run on a photo of each exhibition item and the results used to create CSS styles for each piece."
 - <img src="/images/sixfold/colors.png" class="lax">
 - <h2>Stats</h2>
 - <img src="/images/sixfold/mobile1.jpg" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/mobile2.jpg" class="lax c4">
-- <p>Statistics are tracked in MongoDB for each item using the following techniques:</p>
-- <p>Views: With each GET request for an item's content, the view count is increased.</p>
-- <p>Your Views: Each visit to an item's page increases a locally stored cookie on the user's browser.</p>
-- <p>Average Visit: The duration of each page visit is tracked per user. On unload or page change, the visit duration is POSTed to the server's API.</p>
-- <p>Last Visit: On each GET request for an item's content, a timestamp is recorded. On any subsequent visit, the is computed and displayed. </p>
+- "Statistics are tracked in MongoDB for each item using the following techniques:"
+- "Views: With each GET request for an item's content, the view count is increased."
+- "Your Views: Each visit to an item's page increases a locally stored cookie on the user's browser."
+- "Average Visit: The duration of each page visit is tracked per user. On unload or page change, the visit duration is POSTed to the server's API."
+- "Last Visit: On each GET request for an item's content, a timestamp is recorded. On any subsequent visit, the is computed and displayed. "
 - <img src="/images/sixfold/detailpage.jpg" class="lax">
 - <img src="/images/sixfold/expand.gif" class="lax">
 - <h2>The Exhibition</h2>
