@@ -138,7 +138,8 @@ h1.home {
     margin-bottom: 60px;
     padding: 16px;
     box-sizing: border-box;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.25em; }
     #mainColumn li img {
       max-width: 100%;
       max-height: 90vh;
