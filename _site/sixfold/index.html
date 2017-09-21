@@ -100,15 +100,11 @@ Exhibiton items are represented by three colored squares representing the three 
 			
 			<li><img src="/images/sixfold/mobile1.jpg" class="lax c4">&nbsp;&nbsp;<img src="/images/sixfold/mobile2.jpg" class="lax c4"></li>
 			
-			<li>Statistics are tracked in MongoDB for each item using the following techniques:</li>
-			
-			<li>Views: With each GET request for an item's content, the view count is increased.</li>
-			
-			<li>Your Views: Each visit to an item's page increases a locally stored cookie on the user's browser.</li>
-			
-			<li>Average Visit: The duration of each page visit is tracked per user. On unload or page change, the visit duration is POSTed to the server's API.</li>
-			
-			<li>Last Visit: On each GET request for an item's content, a timestamp is recorded. On any subsequent visit, the is computed and displayed. </li>
+			<li>Statistics are tracked in MongoDB for each item using the following techniques:
+ Views: With each GET request for an item's content, the view count is increased.
+ Your Views: Each visit to an item's page increases a locally stored cookie on the user's browser.
+ Average Visit: The duration of each page visit is tracked per user. On unload or page change, the visit duration is POSTed to the server's API.
+ Last Visit: On each GET request for an item's content, a timestamp is recorded. On any subsequent visit, the is computed and displayed.</li>
 			
 			<li><img src="/images/sixfold/detailpage.jpg" class="lax"></li>
 			
