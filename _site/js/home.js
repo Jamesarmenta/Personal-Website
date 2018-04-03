@@ -142,34 +142,34 @@ var intoPosition = function(){
 //WEATHER
 var weather = function() {
   
-  $("#weather").html("loading...");
+  $("#weather").html("Go outside.");
 
-  $.get("http://ipinfo.io", function(response) {
-    var city = response.city + ", " + response.region;
-    if(response.city == response.region){city = response.city + ", "+ response.country};
-    var latlon = response.loc.split(",");
-    var lat = latlon[0];
-    var lon = latlon[1];
+//   $.get("http://ipinfo.io", function(response) {
+//     var city = response.city + ", " + response.region;
+//     if(response.city == response.region){city = response.city + ", "+ response.country};
+//     var latlon = response.loc.split(",");
+//     var lat = latlon[0];
+//     var lon = latlon[1];
     
-    $.get("http://api.sunrise-sunset.org/json?lat="+lat+"&lng="+lon+"&callback=mycallback", function (sunsetdata) {
-     var sunset = sunsetdata.results.sunset; //returns as 1:00:08 AM or 12:00:08 AM
-     if(sunset.length == 10){sunset = "0"+sunset;} //takes care of differing lengths
-     sunset = sunset.replace(/\:\d\d /g, '');//gets rid of minutes & AM/PM
-     var seconds = $.now()/1000;
+//     $.get("http://api.sunrise-sunset.org/json?lat="+lat+"&lng="+lon+"&callback=mycallback", function (sunsetdata) {
+//      var sunset = sunsetdata.results.sunset; //returns as 1:00:08 AM or 12:00:08 AM
+//      if(sunset.length == 10){sunset = "0"+sunset;} //takes care of differing lengths
+//      sunset = sunset.replace(/\:\d\d /g, '');//gets rid of minutes & AM/PM
+//      var seconds = $.now()/1000;
      
-     $.getJSON("https://maps.googleapis.com/maps/api/timezone/json?location="+lat+","+lon+"&timestamp="+seconds+"&callback=timezone&key=AIzaSyB7ZmQMmam7p0RhClNy3-CWHqdzjJO7IEo", function(timezone) {
-      var offset = (timezone.rawOffset+timezone.dstOffset) / 3600;
-      var hour = parseInt(sunset.substring(0,2))+offset;
-      if(hour>12){hour = hour - 12;}
-      if(hour<0){hour = hour + 12;}
-      var minute = sunset.substring(3,5);
+//      $.getJSON("https://maps.googleapis.com/maps/api/timezone/json?location="+lat+","+lon+"&timestamp="+seconds+"&callback=timezone&key=AIzaSyB7ZmQMmam7p0RhClNy3-CWHqdzjJO7IEo", function(timezone) {
+//       var offset = (timezone.rawOffset+timezone.dstOffset) / 3600;
+//       var hour = parseInt(sunset.substring(0,2))+offset;
+//       if(hour>12){hour = hour - 12;}
+//       if(hour<0){hour = hour + 12;}
+//       var minute = sunset.substring(3,5);
       
-      $("#weather").html("Sunset is at " + hour + ":" + minute + "pm in " + city);
+//       $("#weather").html("Sunset is at " + hour + ":" + minute + "pm in " + city);
       
-    }, "jsonp");
+//     }, "jsonp");
      
-   }, "jsonp");
+//    }, "jsonp");
     
-  }, "jsonp");
+//   }, "jsonp");
 
 };
