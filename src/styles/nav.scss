@@ -1,0 +1,42 @@
+@import './global.scss';
+
+.nav-common {
+    margin: $gutterUnit 0 $gutterUnit 0;
+
+    li {
+        font-size: $fontSizeLarge;
+        margin-bottom: $gutterUnit*4;
+        text-align: center;
+        a {
+            font-size: $fontSizeLarge;
+            @extend .hover-highlight;
+        }
+
+    }
+
+    ul {
+        list-style: none;
+        padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 900px) {
+        font-size: $fontSizeSmall;
+        background-color: transparent;
+
+        li {
+            font-size: $fontSizeSmall;
+            max-width: 100%;
+            word-break: break-all;
+            margin-bottom: $gutterUnit;
+            text-align: left;
+
+            a {
+                font-size: $fontSizeSmall;
+            }
+        }
+    }
+}
+
+.is-current-page {
+    display: none;
+}
