@@ -49,7 +49,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "publishToMaster": "git add public && git commit -m 'Update public site' && git subtree push --prefix public origin master",
+    "publishToMaster": "git add public && git commit -m 'Update public site' && git subtree push --prefix public/ origin master",
     "clean": "gatsby clean"
   },
   "repository": {
