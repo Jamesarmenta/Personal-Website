@@ -22,8 +22,22 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 1600,
-              quality: 90,
+              maxWidth: 1200,
+              quality: 75,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-video',
+            options: {
+              width: 800,
+              height: 'auto',
+              preload: 'auto',
+              muted: true,
+              autoplay: true,
+              playsinline: true,
+              controls: false,
+              loop: true,
             },
           },
           'gatsby-remark-copy-linked-files',

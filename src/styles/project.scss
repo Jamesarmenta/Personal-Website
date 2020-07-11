@@ -82,6 +82,22 @@
         pointer-events: none;
     }
 
+    .gatsby-resp-image-wrapper{
+        margin-bottom: $gutterUnit*2;
+        max-height: 90vh;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    p {
+        video {
+            max-height: 90vh;
+            width: 100%;
+        }
+    }
+
     img {
         max-width: 100%;
     }
@@ -97,10 +113,8 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin-bottom: $gutterUnit*2;
 
   .column {
-      margin-bottom: $gutterUnit*2;
       margin-left: 0;
   }
 

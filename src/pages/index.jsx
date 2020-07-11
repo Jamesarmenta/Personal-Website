@@ -108,7 +108,7 @@ const IndexPage = () => {
         className={`floating-item ${currentProjectSelected ? 'selected' : ''}`}
         data-depth={Math.random()}
       >
-        <a href={path} onClick={handleProjectClick}>
+        <a href={path} onClick={handleProjectClick} alt={title}>
           <img src={projectImage} alt={title} />
         </a>
       </div>

@@ -3,8 +3,7 @@ title: "Selected Posters"
 description: |
     During my time at Skidmore College, I was fortunate enough to lead the Student Events Team as a manager. Part of my role involved working with student clubs to create posters to advertise for their events. I was also responsible for creating posters to inform students on the services the Student Events Team provided.
 ---
-
-<div class="row no-click">
+<div class="row">
     <div class="column">
         <img alt="designthinking" src="./images/designthinking.png" />
     </div>
@@ -13,19 +12,10 @@ description: |
     </div>
 </div>
 
-<div class="row no-click">
-    <div class="column">
-        <img alt="ampersandaltmockup" src="./images/ampersandaltmockup.jpg" />
-    </div>
-</div>
+![af](./images/ampersandaltmockup.jpg)
+![af](./images/ampersandmockup.jpg)
 
-<div class="row no-click">
-    <div class="column">
-        <img alt="ampersandmockup" src="./images/ampersandmockup.jpg" />
-    </div>
-</div>
-
-<div class="row no-click">
+<div class="row">
     <div class="column">
         <img alt="kasser" src="./images/kasser.jpg" />
     </div>
@@ -34,13 +24,13 @@ description: |
     </div>
 </div>
 
-<div class="row no-click">
+<div class="row">
     <div class="column">
         <img alt="letusmakeyourpostersmockup" src="./images/letusmakeyourpostersmockup.jpg" />
     </div>
 </div>
 
-<div class="row no-click">
+<div class="row">
     <div class="column">
         <img alt="modeleuro" src="./images/modeleuro.png" />
     </div>
@@ -49,13 +39,13 @@ description: |
     </div>
 </div>
 
-<div class="row no-click">
+<div class="row">
     <div class="column">
         <img alt="natureharmcloseup" src="./images/natureharmcloseup.png" />
     </div>
 </div>
 
-<div class="row no-click">
+<div class="row">
     <div class="column">
         <img alt="ottermclovins" src="./images/ottermclovins.jpg" />
     </div>
