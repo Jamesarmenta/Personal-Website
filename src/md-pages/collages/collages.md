@@ -32,7 +32,6 @@ description: |
     </div>
 </div>
 
-![trails](./images/trails.jpg)
 ![collage2](./images/collage2.jpg)
 ![pool](./images/pool.jpg)
 
@@ -45,6 +44,9 @@ description: |
     </div>
 </div>
 
+![trails](./images/trails.jpg)
+![spring192](./images/spring192.jpg)
+
 <div class="row">
     <div class="column">
         <img alt="nine" src="./images/nine.jpg" />
@@ -55,7 +57,18 @@ description: |
 </div>
 
 ![pink](./images/pink.jpg)
-![spring192](./images/spring192.jpg)
-![teeth](./images/teeth.jpg)
 
-`video: ./images/electricbox.mp4`
+<div class="shadow">
+    <img alt="teeth" src="./images/teeth.jpg" />
+</div>
+
+In 2018, I painted an electric box for the Normal Heights Urban Arts association.
+
+<div class="row">
+    <div class="column">
+        <img alt="electricbox" src="./images/electricbox.gif" />
+    </div>
+    <div class="column">
+        <img alt="electricboxmaps" src="./images/electricboxmaps.jpg" />
+    </div>
+</div>
