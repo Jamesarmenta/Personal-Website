@@ -85,9 +85,11 @@
     .gatsby-resp-image-wrapper{
         margin-bottom: $gutterUnit*2;
         max-height: 90vh;
+        background-color: transparent;
 
         img {
             object-fit: contain;
+            background-color: transparent;
         }
     }
 

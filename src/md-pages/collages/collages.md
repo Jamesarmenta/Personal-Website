@@ -7,6 +7,7 @@ description: |
 ---
 ![graphique3](./images/graphique3.jpg)
 ![collage](./images/collage.jpg)
+![wallwheat](./images/wallwheat.jpg)
 
 <div class="row">
     <div class="column">
@@ -34,6 +35,8 @@ description: |
 
 ![collage2](./images/collage2.jpg)
 ![pool](./images/pool.jpg)
+![wallinterior](./images/wallinterior.jpg)
+![wall](./images/wall.jpg)
 
 <div class="row">
     <div class="column">
