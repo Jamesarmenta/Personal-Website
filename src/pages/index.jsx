@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import Parallax from 'parallax-js';
 import { navigate, useStaticQuery, graphql } from 'gatsby';
+import ReactGA from 'react-ga';
 import { fadeOutAllElementsSelector, fadeOutElementSelector } from '../utils/animate';
 import { shuffleFloatingItems } from '../utils/floatingItems';
 import { getSunsetText } from '../utils/astronomy-api';
 import InteractiveIcon from '../components/InteractiveIcon';
 import SEO from '../components/Seo';
 import '../styles/home.scss';
+
+ReactGA.pageview(window.location.pathname);
+
+const homeClickEventAction = (actionName) => {
+  ReactGA.event({
+    category: 'HomeClick',
+    action: actionName,
+  });
+};
 
 let timeout = false;
 // window.resize event listener
@@ -94,6 +104,7 @@ const IndexPage = () => {
 
     const handleProjectClick = (e) => {
       e.preventDefault();
+      homeClickEventAction(path);
       setClickedProject(path);
       fadeOutAllElementsSelector('.floating-item:not(.selected)', () => {
         fadeOutElementSelector('.floating-item.selected', () => navigate(path));
@@ -125,7 +136,10 @@ const IndexPage = () => {
           altText="About Me"
           title="about"
           text={aboutText}
-          onClick={() => setAboutText(site.siteMetadata.description)}
+          onClick={() => {
+            homeClickEventAction('about');
+            setAboutText(site.siteMetadata.description);
+          }}
         />
       </div>
       <div className="floating-item" data-depth={Math.random()}>
@@ -134,7 +148,10 @@ const IndexPage = () => {
           altText="Sunset Today"
           title="sunset"
           text={sunsetText}
-          onClick={handleSunsetClick}
+          onClick={() => {
+            homeClickEventAction('sunset');
+            handleSunsetClick();
+          }}
         />
       </div>
       <div className="floating-item" data-depth={Math.random()}>
@@ -143,7 +160,10 @@ const IndexPage = () => {
           altText="E-mail Me"
           title="email"
           text={emailText}
-          onClick={() => setEmailText(site.siteMetadata.email)}
+          onClick={() => {
+            homeClickEventAction('email');
+            setEmailText(site.siteMetadata.email);
+          }}
         />
       </div>
       <div className="floating-item" data-depth={Math.random()}>
@@ -151,7 +171,10 @@ const IndexPage = () => {
           icon="↻︎"
           altText="Shuffle"
           title="shuffle"
-          onClick={shuffleFloatingItems}
+          onClick={() => {
+            homeClickEventAction('shuffle');
+            shuffleFloatingItems();
+          }}
         />
       </div>
     </div>

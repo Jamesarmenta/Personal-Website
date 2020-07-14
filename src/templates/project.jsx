@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { navigate, graphql } from 'gatsby';
+import ReactGA from 'react-ga';
 import { fadeOutElementSelector } from '../utils/animate';
 import Nav from '../components/Nav';
 import SEO from '../components/Seo';
@@ -13,7 +14,15 @@ export default function Template({
 
   const [isNavFullScreen, setIsNavFullScreen] = useState(false);
 
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   const toggleIsNavFullScreen = () => {
+    ReactGA.event({
+      category: 'ProjectClick',
+      action: 'isNavFullScreen',
+    });
     setIsNavFullScreen(!isNavFullScreen);
   };
 
@@ -36,6 +45,10 @@ export default function Template({
         className="project-exit shadow"
         type="button"
         onClick={() => {
+          ReactGA.event({
+            category: 'ProjectClick',
+            action: 'X',
+          });
           fadeOutElementSelector('.project-wrapper', () => navigate('/'));
         }}
       >
