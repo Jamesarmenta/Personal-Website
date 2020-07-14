@@ -9,7 +9,8 @@ import InteractiveIcon from '../components/InteractiveIcon';
 import SEO from '../components/Seo';
 import '../styles/home.scss';
 
-ReactGA.pageview(window.location.pathname);
+// window.resize event listener
+let timeout = false;
 
 const homeClickEventAction = (actionName) => {
   ReactGA.event({
@@ -18,11 +19,10 @@ const homeClickEventAction = (actionName) => {
   });
 };
 
-let timeout = false;
-// window.resize event listener
-
 const IndexPage = () => {
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+
     const shuffleOnDebouncedResize = () => {
       // clear the timeout
       clearTimeout(timeout);
