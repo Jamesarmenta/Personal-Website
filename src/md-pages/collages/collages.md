@@ -7,7 +7,6 @@ description: |
 ---
 ![graphique3](./images/graphique3.jpg)
 ![collage](./images/collage.jpg)
-![wallwheat](./images/wallwheat.jpg)
 
 <div class="row">
     <div class="column">
@@ -35,8 +34,6 @@ description: |
 
 ![collage2](./images/collage2.jpg)
 ![pool](./images/pool.jpg)
-![wallinterior](./images/wallinterior.jpg)
-![wall](./images/wall.jpg)
 
 <div class="row">
     <div class="column">
@@ -63,15 +60,4 @@ description: |
 
 <div class="shadow">
     <img alt="teeth" src="./images/teeth.jpg" />
-</div>
-
-In 2018, I painted an electric box for the Normal Heights Urban Arts association.
-
-<div class="row">
-    <div class="column">
-        <img alt="electricbox" src="./images/electricbox.gif" />
-    </div>
-    <div class="column">
-        <img alt="electricboxmaps" src="./images/electricboxmaps.jpg" />
-    </div>
 </div>
