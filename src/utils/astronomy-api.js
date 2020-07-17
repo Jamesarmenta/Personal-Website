@@ -25,19 +25,11 @@ const _fetchJsonWithTimeoutMs = (url, options = {}, timeoutMs = 5000) => {
   }));
 };
 
-export const getAstronomyPayload = async () => {
-  const IP_KEY = '35eed071b8600098a2ab9adb119c9531';
-  const IP_URL = `http://api.ipapi.com/api/check?access_key=${IP_KEY}&fields=latitude,longitude,city`;
-
-  const { latitude, longitude, city } = await _fetchJsonWithTimeoutMs(IP_URL, {}, 4000);
-  return { latitude, longitude, city };
-};
-
 export const getSunsetText = async () => {
   try {
     const {
       latitude, longitude, city,
-    } = await getAstronomyPayload();
+    } = await _fetchJsonWithTimeoutMs('https://geolocation-db.com/json/');
 
     const { sunset } = SunCalc.getTimes(new Date(), latitude, longitude);
     const nowTime = dayjs(new Date());
