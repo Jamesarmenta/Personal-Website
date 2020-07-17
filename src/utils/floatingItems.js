@@ -1,15 +1,15 @@
+function _shuffle(a) {
+  // eslint-disable-next-line no-plusplus
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    // eslint-disable-next-line no-param-reassign
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export const shuffleFloatingItems = () => {
   const floatingItems = [...document.querySelectorAll('.floating-item')];
-
-  function shuffle(a) {
-    // eslint-disable-next-line no-plusplus
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      // eslint-disable-next-line no-param-reassign
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
 
   // 16 options
   const gridOptionsLg = [
@@ -31,7 +31,7 @@ export const shuffleFloatingItems = () => {
     [75, 75],
   ];
 
-  // 9 options total
+  // 10 options total
   const gridOptionsSm = [
     [0, 0],
     [0, 20],
@@ -39,13 +39,14 @@ export const shuffleFloatingItems = () => {
     [0, 60],
     [0, 80],
     [50, 0],
+    [50, 20],
     [50, 60],
     [50, 80],
   ];
 
-  const gridToUse = window.innerHeight > window.innerWidth ? gridOptionsSm : gridOptionsLg;
+  const gridToUse = (window.innerHeight > window.innerWidth) ? gridOptionsSm : gridOptionsLg;
 
-  const shuffledOptions = shuffle(gridToUse);
+  const shuffledOptions = _shuffle(gridToUse);
 
   floatingItems.forEach((item) => {
     const [x, y] = shuffledOptions.pop();

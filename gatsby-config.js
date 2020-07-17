@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'James Armenta',
-    description: 'James Armenta is a software engineer from San Diego, California',
+    description: 'James Armenta is a software engineer and artist from San Diego, California',
     email: 'armentajames@gmail.com',
   },
   plugins: [

@@ -1,6 +1,7 @@
 import 'abortcontroller-polyfill/dist/polyfill-patch-fetch';
 import dayjs from 'dayjs';
 import SunCalc from 'suncalc';
+import ReactGA from 'react-ga';
 
 const _fetchJsonWithTimeoutMs = (url, options = {}, timeoutMs = 5000) => {
   const controller = typeof window !== 'undefined' ? new window.AbortController() : { abort: () => {} };
@@ -25,11 +26,11 @@ const _fetchJsonWithTimeoutMs = (url, options = {}, timeoutMs = 5000) => {
 };
 
 export const getAstronomyPayload = async () => {
-  const IP_URL = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCcgUgiLr5rlsGTfAYw9fhzjlnPlOUxL8U';
+  const IP_KEY = '35eed071b8600098a2ab9adb119c9531';
+  const IP_URL = `http://api.ipapi.com/api/check?access_key=${IP_KEY}&fields=latitude,longitude,city`;
 
-  const all = await _fetchJsonWithTimeoutMs(IP_URL, {}, 4000);
-  console.log(all);
-  return { all };
+  const { latitude, longitude, city } = await _fetchJsonWithTimeoutMs(IP_URL, {}, 4000);
+  return { latitude, longitude, city };
 };
 
 export const getSunsetText = async () => {
@@ -47,7 +48,10 @@ export const getSunsetText = async () => {
 
     return `Sunset in ${city} ${wasOrIs} at ${sunsetTimeFormatted} today`;
   } catch (e) {
-    console.log(`Error fetching sunset: ${e}`);
+    ReactGA.event({
+      category: 'Error',
+      action: 'SunsetFetch',
+    });
   }
 
   return 'Go outside';
