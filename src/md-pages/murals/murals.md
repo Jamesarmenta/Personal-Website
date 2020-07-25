@@ -18,6 +18,7 @@ description: |
 </div>
 
 ![knot wall](./images/knot_wall.jpg)
+![apricot wall](./images/apricot.jpg)
 
 <div class="row">
     <div class="column">
@@ -28,6 +29,7 @@ description: |
     </div>
 </div>
 
+![girl wall](./images/girl.jpg)
 ![chartstripe wall](./images/chartstripe_wall.jpg)
 
 <div class="row">
