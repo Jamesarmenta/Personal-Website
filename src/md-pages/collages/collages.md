@@ -17,11 +17,34 @@ description: |
     </div>
 </div>
 
+![heaven](./images/heaven.jpg)
+![demand justice](./images/justice-20200602.jpg)
+
+<div class="row">
+    <div class="column">
+        <img alt="postal service" src="./images/v1_J-11x7.jpg" />
+    </div>
+    <div class="column">
+        <img alt="20200528" src="./images/20200528.jpg" />
+    </div>
+</div>
+
+
 ![firstpattern](./images/firstpattern.jpg)
 ![collage4](./images/collage4.jpg)
+
+<div class="row">
+    <div class="column">
+        <img alt="nine" src="./images/nine.jpg" />
+    </div>
+    <div class="column">
+        <img alt="notsure" src="./images/notsure.jpg" />
+    </div>
+</div>
+
 ![gems](./images/gems.jpg)
 ![graphique](./images/graphique.jpg)
-![heaven](./images/heaven.jpg)
+
 
 <div class="row">
     <div class="column">
@@ -46,15 +69,6 @@ description: |
 
 ![trails](./images/trails.jpg)
 ![spring192](./images/spring192.jpg)
-
-<div class="row">
-    <div class="column">
-        <img alt="nine" src="./images/nine.jpg" />
-    </div>
-    <div class="column">
-        <img alt="notsure" src="./images/notsure.jpg" />
-    </div>
-</div>
 
 ![pink](./images/pink.jpg)
 
