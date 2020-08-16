@@ -52,4 +52,4 @@ description: |
     </div>
 </div>
 
-![be here now](./images/beherenowwall.jpg)
+![amorphous wall ](./images/amorphous.jpg)
