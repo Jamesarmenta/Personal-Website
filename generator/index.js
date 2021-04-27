@@ -1,6 +1,5 @@
 const fs = require('fs');
 const Handlebars = require('handlebars');
-const {shuffleArray} = require('./util.js');
 
 const IMAGE_DIR = './src/public/images/';
 const imageNames = fs.readdirSync(IMAGE_DIR).filter(name => name.match(/\.(jpg|jpeg|gif|png)$/));

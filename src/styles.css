@@ -1,8 +1,23 @@
+.lightTheme {
+    background-color: white;
+    color: #1c1c1c;
+}
+
+.darkTheme {
+    background-color:  #1c1c1c;
+    color: white;
+}
+
 body {
   font-family: "Work Sans", "Avenir", Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   margin-top: 12px;
+}
+
+a {
+    color: #1c1c1c;
+    cursor: pointer;
 }
 
 div {
@@ -32,6 +47,7 @@ main {
 }
 
 .gradimg {
+  max-width: 100%;
   max-height: 500px;
   object-fit: contain;
 }
@@ -45,11 +61,23 @@ main {
   max-width: 750px;
 }
 
-a,
-a:visited {
-  color: black;
-  text-decoration: none;
+.grad.text > a {
+    padding: 2px;
+    text-decoration: none;
 }
-a:hover {
-  background-color: yellow;
+.grad.text > a:hover {
+    background-color:  #b92;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: white;
+    }
+    a {
+        color: white;
+    }
+    .grad.text > a:hover {
+        
+    }
 }
