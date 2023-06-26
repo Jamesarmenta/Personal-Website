@@ -10,12 +10,19 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 export interface RandomPadRowProps extends DefaultRandomPadRowProps {}
 
 function RandomPadRow_(props: RandomPadRowProps, ref: HTMLElementRefOf<"div">) {
+  const [paddingStyles, setPaddingStyles] = React.useState({});
+
+  React.useLayoutEffect(() => {
+    setPaddingStyles({
+      paddingLeft: Math.floor(Math.random() * 30) + "%",
+      paddingRight: Math.floor(Math.random() * 30) + "%"
+    });
+  }, []);
 
   const overrides = {
     root: {
       style: {
-        paddingLeft: Math.floor(Math.random() * 30) + "%",
-        paddingRight: Math.floor(Math.random() * 30) + "%"
+        ...paddingStyles
       }
     }
   };
