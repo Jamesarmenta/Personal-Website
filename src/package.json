@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "npx next dev",
-    "build": "npx next build && npm run clean && mkdir ../docs && mv ./out/* ../docs/ && touch ../docs/.nojekyll",
+    "build": "npx next build && npm run clean && mkdir ../docs && mv ./out/* ../docs/ && touch ../docs/.nojekyll && cp ../CNAME ../docs/CNAME",
     "clean": "rm -rf ../docs/",
     "start": "npx next start",
     "sync": "npx @plasmicapp/cli sync",
