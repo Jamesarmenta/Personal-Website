@@ -47,12 +47,16 @@
   left: 0px;
   top: 0px;
   z-index: 1;
+  padding-top: var(--token-TztiQK-QQ);
+  padding-right: var(--token-TztiQK-QQ);
+  padding-left: var(--token-TztiQK-QQ);
   min-width: 0;
-  padding: var(--token-TztiQK-QQ);
 }
 @media (min-width: 0px) and (max-width: 900px) {
   .freeBox {
-    padding: var(--token-PNd_-u-H3);
+    padding-top: var(--token-PNd_-u-H3);
+    padding-right: var(--token-PNd_-u-H3);
+    padding-left: var(--token-PNd_-u-H3);
   }
 }
 .svg {

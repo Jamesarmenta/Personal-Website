@@ -60,7 +60,7 @@ export const PlasmicTabTrigger__ArgProps = new Array<ArgPropType>(
 
 export type PlasmicTabTrigger__OverridesType = {
   root?: p.Flex<typeof TabButton>;
-  freeBox?: p.Flex<"div">;
+  button?: p.Flex<"button">;
 };
 
 export interface DefaultTabTriggerProps {
@@ -131,10 +131,10 @@ function PlasmicTabTrigger__RenderFunc(props: {
       )}
       tabKey={args.destination}
     >
-      <div
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
-        className={classNames(projectcss.all, sty.freeBox)}
+      <button
+        data-plasmic-name={"button"}
+        data-plasmic-override={overrides.button}
+        className={classNames(projectcss.all, projectcss.button, sty.button)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
@@ -159,21 +159,21 @@ function PlasmicTabTrigger__RenderFunc(props: {
 
           value: args.children
         })}
-      </div>
+      </button>
     </TabButton>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox"],
-  freeBox: ["freeBox"]
+  root: ["root", "button"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: typeof TabButton;
-  freeBox: "div";
+  button: "button";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -236,7 +236,7 @@ export const PlasmicTabTrigger = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicTabTrigger
     internalVariantProps: PlasmicTabTrigger__VariantProps,
