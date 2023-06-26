@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  transform: none;
+  min-width: 0;
+}

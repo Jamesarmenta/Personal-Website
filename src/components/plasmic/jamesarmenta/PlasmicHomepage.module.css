@@ -1,0 +1,802 @@
+.root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+  background: var(--token-3tp7Rcnrg);
+  min-width: 0;
+  min-height: 0;
+  padding: 0px var(--token-TztiQK-QQ) 64px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  margin-top: calc(0px - var(--token-QhsemQUFU));
+  height: calc(100% + var(--token-QhsemQUFU));
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: var(--token-QhsemQUFU);
+}
+@media (min-width: 0px) and (max-width: 900px) {
+  .root {
+    padding: var(--token-PNd_-u-H3);
+  }
+}
+.randomPadRow__up0CX:global(.__wab_instance) {
+  max-width: 100%;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+.freeBox {
+  display: flex;
+  position: sticky;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  min-width: 0;
+  padding: var(--token-TztiQK-QQ);
+}
+.svg {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.randomPadRow__btDGr:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.text__kEiSh {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 80%;
+  text-align: right;
+  min-width: 0;
+}
+.ntc:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.project__cZkdk:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+}
+.projectTabItem___7GLyc:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__lphUs {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__lphUs > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__lphUs > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__wozvn:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__soK15 {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__soK15 > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__soK15 > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__elws1:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__lLvOu {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__lLvOu > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__lLvOu > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__xqrKq:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img___18Gjt {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img___18Gjt > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img___18Gjt > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.casa:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.project__tuTmE:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+}
+.projectTabItem___6FRXv:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__qmgju {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__qmgju > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__qmgju > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__tpiAm:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__jfOjm {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__jfOjm > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__jfOjm > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__tTO:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__dUcoe {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__dUcoe > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__dUcoe > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__shJgP:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__bkir {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__bkir > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__bkir > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.contactme:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.link__biWj5 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.of:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.project__iwF2:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+}
+.projectTabItem__q8UGt:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__t3ZWj {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__t3ZWj > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__t3ZWj > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__vQKz:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__wvtdr {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__wvtdr > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__wvtdr > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__t3Gaa:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__zMdu {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__zMdu > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__zMdu > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__fYntC:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__brmU9 {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__brmU9 > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__brmU9 > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.glass:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.project__j7Js4:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+}
+.projectTabItem__wxhKg:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__nfYwn {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__nfYwn > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__nfYwn > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem___3ExgW:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__jXi8D {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__jXi8D > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__jXi8D > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem___4TrCm:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img___8JqSy {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img___8JqSy > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img___8JqSy > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__zhsBn:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__vbVn {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__vbVn > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__vbVn > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.insta:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.link__tCluq {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.sixfold:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.project__mYa0P:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+}
+.projectTabItem__mcz46:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__oB9G {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__oB9G > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__oB9G > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__lByga:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img___625R1 {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img___625R1 > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img___625R1 > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.collage:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.project__u8O2B:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+}
+.projectTabItem__akWb:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__wlzIw {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__wlzIw > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__wlzIw > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__mJdt9:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__paeD {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__paeD > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__paeD > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__yu16E:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__psox5 {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__psox5 > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__psox5 > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.projectTabItem__wKpn1:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.img__oBq6F {
+  width: 100%;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: auto;
+}
+.img__oBq6F > picture > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.img__oBq6F > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+  object-position: center center;
+}
+.footer:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.text__eTkrC {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}

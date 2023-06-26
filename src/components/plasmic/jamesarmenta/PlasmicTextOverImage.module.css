@@ -1,0 +1,57 @@
+.content {
+  display: flex;
+  width: auto;
+  cursor: pointer;
+  position: relative;
+  justify-self: flex-start;
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: auto;
+  flex-direction: column;
+}
+.img__x62E {
+  position: relative;
+  object-fit: contain;
+  left: auto;
+  top: auto;
+  width: 100%;
+  min-width: 0;
+}
+.img__x62E > picture > img {
+  object-fit: contain;
+}
+.img__x62E > :global(.__wab_img-spacer) > img {
+  object-fit: contain;
+}
+.overlay {
+  position: absolute;
+  flex-direction: column;
+  left: 0px;
+  top: 0px;
+  flex-shrink: 1;
+  height: 100%;
+  background: #1c1c1cbf;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  display: none;
+  padding: var(--token-PNd_-u-H3);
+}
+.content:hover .overlay {
+  display: flex;
+}
+.content:focus .overlay {
+  display: flex;
+  outline: none;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
