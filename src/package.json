@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "npx next dev",
-    "build": "npx next build && mv ./out/ ../docs",
+    "build": "npx next build && npm run clean && mv ./out/ ../docs && touch ../docs/.nojekyll",
+    "clean": "rm -rf ../docs/*",
     "start": "npx next start",
     "lint": "npx next lint"
   },
