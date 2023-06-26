@@ -50,11 +50,22 @@
   min-width: 0;
   padding: var(--token-TztiQK-QQ);
 }
+@media (min-width: 0px) and (max-width: 900px) {
+  .freeBox {
+    padding: var(--token-PNd_-u-H3);
+  }
+}
 .svg {
   object-fit: cover;
-  width: 60px;
-  height: 60px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 900px) {
+  .svg {
+    width: 30px;
+    flex-shrink: 0;
+  }
 }
 .randomPadRow__btDGr:global(.__wab_instance) {
   max-width: 100%;

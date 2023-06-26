@@ -13,10 +13,16 @@ function RandomPadRow_(props: RandomPadRowProps, ref: HTMLElementRefOf<"div">) {
   const [paddingStyles, setPaddingStyles] = React.useState({});
 
   React.useLayoutEffect(() => {
-    setPaddingStyles({
-      paddingLeft: Math.floor(Math.random() * 30) + "%",
-      paddingRight: Math.floor(Math.random() * 30) + "%"
-    });
+    const isMobile = window.innerWidth < 800;
+    const MAX_AMOUNT = isMobile ? 10 : 30;
+    
+    const paddingAmount = Math.floor(Math.random() * MAX_AMOUNT);
+    const paddingDirection = Math.random() > 0.5 ? "paddingLeft" : "paddingRight";
+
+    const nextPaddingStyles: {[key: string]: string} = {};
+    nextPaddingStyles[paddingDirection] = paddingAmount + "%";
+
+    setPaddingStyles(nextPaddingStyles);
   }, []);
 
   const overrides = {
