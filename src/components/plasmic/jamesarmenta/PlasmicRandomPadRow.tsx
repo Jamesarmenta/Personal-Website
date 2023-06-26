@@ -113,24 +113,6 @@ function PlasmicRandomPadRow__RenderFunc(props: {
         projectcss.plasmic_tokens,
         sty.root
       )}
-      style={(() => {
-        try {
-          return (function () {
-            return {
-              paddingLeft: Math.floor(Math.random() * 30) + "%",
-              paddingRight: Math.floor(Math.random() * 30) + "%"
-            };
-          })();
-        } catch (e) {
-          if (
-            e instanceof TypeError ||
-            e?.plasmicType === "PlasmicUndefinedDataError"
-          ) {
-            return undefined;
-          }
-          throw e;
-        }
-      })()}
     >
       {p.renderPlasmicSlot({
         defaultContents: null,

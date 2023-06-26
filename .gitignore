@@ -70,3 +70,5 @@ yarn-error.log
 
 # Parcel
 .parcel-cache/
+.next/
+src/.next/
