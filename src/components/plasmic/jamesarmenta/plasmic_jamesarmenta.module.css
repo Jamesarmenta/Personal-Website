@@ -151,11 +151,19 @@
   --mixin-6D73lrqIcvqS__position: relative;
   --mixin-6D73lrqIcvqS__list-style-type: disc;
   --mixin-6D73lrqIcvqS__white-space: pre-wrap;
+  --mixin-bX77zxyZ4_padding-top: 4px;
+  --mixin-bX77zxyZ4_padding-right: 4px;
+  --mixin-bX77zxyZ4_padding-bottom: 4px;
+  --mixin-bX77zxyZ4_padding-left: 4px;
   --mixin-bX77zxyZ4_white-space: pre-wrap;
   --mixin-UqBalg-2D_background: linear-gradient(
-    var(--token-QcHluUBSF),
-    var(--token-QcHluUBSF)
-  );
+      60deg,
+      #24a8a8 0%,
+      #cc6442 27%,
+      #808b41 66%,
+      #b56645 100%
+    )
+    0% 0% / 100% 100% repeat;
   --mixin-UqBalg-2D_white-space: pre-wrap;
 }
 
@@ -664,6 +672,9 @@ a:where(.root_reset.a),
 :where(.root_reset .__wab_expr_html_text) a,
 :where(.root_reset_tags) a,
 a:where(.root_reset_tags) {
+  padding: var(--mixin-bX77zxyZ4_padding-top)
+    var(--mixin-bX77zxyZ4_padding-right) var(--mixin-bX77zxyZ4_padding-bottom)
+    var(--mixin-bX77zxyZ4_padding-left);
 }
 
 :where(.root_reset) a:where(.a):hover,
@@ -671,5 +682,12 @@ a:where(.root_reset.a):hover,
 :where(.root_reset .__wab_expr_html_text) a:hover,
 :where(.root_reset_tags) a:hover,
 a:where(.root_reset_tags):hover {
-  background: var(--token-QcHluUBSF);
+  background: linear-gradient(
+      60deg,
+      #24a8a8 0%,
+      #cc6442 27%,
+      #808b41 66%,
+      #b56645 100%
+    )
+    0% 0% / 100% 100% repeat;
 }

@@ -1,0 +1,12 @@
+.root {
+  object-fit: cover;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 0px) and (max-width: 900px) {
+  .root {
+    width: 30px;
+  }
+}

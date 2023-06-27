@@ -43,6 +43,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_jamesarmenta.module.css"; // plasmic-import: uqLoCtoBYZiDt8D79DKGpo/projectcss
 import sty from "./PlasmicTabTrigger.module.css"; // plasmic-import: LdyxwopXo0/css
 
+import IconIcon from "../plasmic_tabs/icons/PlasmicIcon__Icon"; // plasmic-import: 8K40faRNhuCj/icon
+
 export type PlasmicTabTrigger__VariantMembers = {};
 export type PlasmicTabTrigger__VariantsArgs = {};
 type VariantPropType = keyof PlasmicTabTrigger__VariantsArgs;
@@ -61,6 +63,9 @@ export const PlasmicTabTrigger__ArgProps = new Array<ArgPropType>(
 export type PlasmicTabTrigger__OverridesType = {
   root?: p.Flex<typeof TabButton>;
   button?: p.Flex<"button">;
+  freeBox?: p.Flex<"div">;
+  text?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
 };
 
 export interface DefaultTabTriggerProps {
@@ -159,14 +164,44 @@ function PlasmicTabTrigger__RenderFunc(props: {
 
           value: args.children
         })}
+        {true ? (
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text
+              )}
+            >
+              {"next image"}
+            </div>
+            <IconIcon
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              className={classNames(projectcss.all, sty.svg)}
+              role={"img"}
+            />
+          </p.Stack>
+        ) : null}
       </button>
     </TabButton>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "button"],
-  button: ["button"]
+  root: ["root", "button", "freeBox", "text", "svg"],
+  button: ["button", "freeBox", "text", "svg"],
+  freeBox: ["freeBox", "text", "svg"],
+  text: ["text"],
+  svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -174,6 +209,9 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: typeof TabButton;
   button: "button";
+  freeBox: "div";
+  text: "div";
+  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -237,6 +275,9 @@ export const PlasmicTabTrigger = Object.assign(
   {
     // Helper components rendering sub-elements
     button: makeNodeComponent("button"),
+    freeBox: makeNodeComponent("freeBox"),
+    text: makeNodeComponent("text"),
+    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicTabTrigger
     internalVariantProps: PlasmicTabTrigger__VariantProps,

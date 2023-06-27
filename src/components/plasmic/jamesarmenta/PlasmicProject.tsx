@@ -117,7 +117,7 @@ function PlasmicProject__RenderFunc(props: {
         sty.root
       )}
       initialKey={"tab1" as const}
-      previewAll={true}
+      previewAll={false}
       previewKey={"tab1" as const}
     >
       <ph.DataCtxReader>

@@ -36,3 +36,52 @@
 .img__ti0Vl > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  align-self: center;
+  margin-top: 8px;
+  opacity: 0.8;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.freeBox > :global(.__wab_flex-container) > *,
+.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox > :global(.__wab_flex-container) > picture > img,
+.freeBox
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.root:hover .freeBox {
+  opacity: 1;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  font-size: 12px;
+  align-self: flex-start;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}

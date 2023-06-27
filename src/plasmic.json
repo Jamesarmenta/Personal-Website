@@ -277,6 +277,19 @@
           "cssFilePath": "plasmic/jamesarmenta/PlasmicProjectTabItem.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Zb8lF7oeWG",
+          "name": "Jface",
+          "type": "managed",
+          "projectId": "uqLoCtoBYZiDt8D79DKGpo",
+          "renderModuleFilePath": "plasmic/jamesarmenta/PlasmicJface.tsx",
+          "importSpec": {
+            "modulePath": "Jface.tsx"
+          },
+          "cssFilePath": "plasmic/jamesarmenta/PlasmicJface.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -284,6 +297,16 @@
           "id": "wHcs7bjYL",
           "name": "IconIcon",
           "moduleFilePath": "plasmic/jamesarmenta/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "iyLpxGmXXT",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/jamesarmenta/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "rx2cuHrC7",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/jamesarmenta/icons/PlasmicIcon__Icon3.tsx"
         }
       ],
       "images": [

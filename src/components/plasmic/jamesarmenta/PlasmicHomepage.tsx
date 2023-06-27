@@ -43,6 +43,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import RandomPadRow from "../../RandomPadRow"; // plasmic-import: aFfmChWFbD/component
+import Jface from "../../Jface"; // plasmic-import: Zb8lF7oeWG/component
 import Project from "../../Project"; // plasmic-import: KwQ1p6f9F4I/component
 import ProjectTabItem from "../../ProjectTabItem"; // plasmic-import: JKE3W8Wul_/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: UHJm5O7-HT/codeComponent
@@ -51,8 +52,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_jamesarmenta.module.css"; // plasmic-import: uqLoCtoBYZiDt8D79DKGpo/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: wOb-BEgH1SQYh/css
-
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: wHcs7bjYL/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -66,15 +65,15 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   freeBox?: p.Flex<"div">;
-  svg?: p.Flex<"svg">;
+  jface?: p.Flex<typeof Jface>;
   ntc?: p.Flex<typeof RandomPadRow>;
   casa?: p.Flex<typeof RandomPadRow>;
-  contactme?: p.Flex<typeof RandomPadRow>;
   of?: p.Flex<typeof RandomPadRow>;
   glass?: p.Flex<typeof RandomPadRow>;
-  insta?: p.Flex<typeof RandomPadRow>;
   sixfold?: p.Flex<typeof RandomPadRow>;
   collage?: p.Flex<typeof RandomPadRow>;
+  contactme?: p.Flex<typeof RandomPadRow>;
+  insta?: p.Flex<typeof RandomPadRow>;
   footer?: p.Flex<typeof RandomPadRow>;
 };
 
@@ -116,6 +115,19 @@ function PlasmicHomepage__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "shuffle",
+        type: "private",
+        variableType: "number",
+        initFunc: ({ $props, $state, $queries, $ctx }) => 0 as const
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   return (
     <React.Fragment>
@@ -166,11 +178,10 @@ function PlasmicHomepage__RenderFunc(props: {
                 data-plasmic-override={overrides.freeBox}
                 className={classNames(projectcss.all, sty.freeBox)}
               >
-                <IconIcon
-                  data-plasmic-name={"svg"}
-                  data-plasmic-override={overrides.svg}
-                  className={classNames(projectcss.all, sty.svg)}
-                  role={"img"}
+                <Jface
+                  data-plasmic-name={"jface"}
+                  data-plasmic-override={overrides.jface}
+                  className={classNames("__wab_instance", sty.jface)}
                 />
               </div>
             ) : null}
@@ -460,25 +471,6 @@ function PlasmicHomepage__RenderFunc(props: {
             </Project>
           </RandomPadRow>
           <RandomPadRow
-            data-plasmic-name={"contactme"}
-            data-plasmic-override={overrides.contactme}
-            className={classNames("__wab_instance", sty.contactme)}
-          >
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__biWj5
-              )}
-              component={Link}
-              href={"mailto:armentajames@gmail.com" as const}
-              platform={"nextjs"}
-            >
-              {"Contact me\u2197"}
-            </p.PlasmicLink>
-          </RandomPadRow>
-          <RandomPadRow
             data-plasmic-name={"of"}
             data-plasmic-override={overrides.of}
             className={classNames("__wab_instance", sty.of)}
@@ -753,26 +745,6 @@ function PlasmicHomepage__RenderFunc(props: {
             </Project>
           </RandomPadRow>
           <RandomPadRow
-            data-plasmic-name={"insta"}
-            data-plasmic-override={overrides.insta}
-            className={classNames("__wab_instance", sty.insta)}
-          >
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__tCluq
-              )}
-              component={Link}
-              href={"https://www.instagram.com/jamesarmenta/" as const}
-              platform={"nextjs"}
-              target={"_blank" as const}
-            >
-              {"@jamesarmenta\u2197"}
-            </p.PlasmicLink>
-          </RandomPadRow>
-          <RandomPadRow
             data-plasmic-name={"sixfold"}
             data-plasmic-override={overrides.sixfold}
             className={classNames("__wab_instance", sty.sixfold)}
@@ -975,6 +947,45 @@ function PlasmicHomepage__RenderFunc(props: {
             </Project>
           </RandomPadRow>
           <RandomPadRow
+            data-plasmic-name={"contactme"}
+            data-plasmic-override={overrides.contactme}
+            className={classNames("__wab_instance", sty.contactme)}
+          >
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__biWj5
+              )}
+              component={Link}
+              href={"mailto:armentajames@gmail.com" as const}
+              platform={"nextjs"}
+            >
+              {"Contact me\u2197"}
+            </p.PlasmicLink>
+          </RandomPadRow>
+          <RandomPadRow
+            data-plasmic-name={"insta"}
+            data-plasmic-override={overrides.insta}
+            className={classNames("__wab_instance", sty.insta)}
+          >
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__tCluq
+              )}
+              component={Link}
+              href={"https://www.instagram.com/jamesarmenta/" as const}
+              platform={"nextjs"}
+              target={"_blank" as const}
+            >
+              {"@jamesarmenta\u2197"}
+            </p.PlasmicLink>
+          </RandomPadRow>
+          <RandomPadRow
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
             className={classNames("__wab_instance", sty.footer)}
@@ -999,27 +1010,27 @@ const PlasmicDescendants = {
   root: [
     "root",
     "freeBox",
-    "svg",
+    "jface",
     "ntc",
     "casa",
-    "contactme",
     "of",
     "glass",
-    "insta",
     "sixfold",
     "collage",
+    "contactme",
+    "insta",
     "footer"
   ],
-  freeBox: ["freeBox", "svg"],
-  svg: ["svg"],
+  freeBox: ["freeBox", "jface"],
+  jface: ["jface"],
   ntc: ["ntc"],
   casa: ["casa"],
-  contactme: ["contactme"],
   of: ["of"],
   glass: ["glass"],
-  insta: ["insta"],
   sixfold: ["sixfold"],
   collage: ["collage"],
+  contactme: ["contactme"],
+  insta: ["insta"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1028,15 +1039,15 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   freeBox: "div";
-  svg: "svg";
+  jface: typeof Jface;
   ntc: typeof RandomPadRow;
   casa: typeof RandomPadRow;
-  contactme: typeof RandomPadRow;
   of: typeof RandomPadRow;
   glass: typeof RandomPadRow;
-  insta: typeof RandomPadRow;
   sixfold: typeof RandomPadRow;
   collage: typeof RandomPadRow;
+  contactme: typeof RandomPadRow;
+  insta: typeof RandomPadRow;
   footer: typeof RandomPadRow;
 };
 
@@ -1101,15 +1112,15 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     freeBox: makeNodeComponent("freeBox"),
-    svg: makeNodeComponent("svg"),
+    jface: makeNodeComponent("jface"),
     ntc: makeNodeComponent("ntc"),
     casa: makeNodeComponent("casa"),
-    contactme: makeNodeComponent("contactme"),
     of: makeNodeComponent("of"),
     glass: makeNodeComponent("glass"),
-    insta: makeNodeComponent("insta"),
     sixfold: makeNodeComponent("sixfold"),
     collage: makeNodeComponent("collage"),
+    contactme: makeNodeComponent("contactme"),
+    insta: makeNodeComponent("insta"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage

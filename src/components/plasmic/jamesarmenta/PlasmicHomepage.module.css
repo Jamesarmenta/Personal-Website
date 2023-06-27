@@ -59,21 +59,18 @@
     padding-left: var(--token-PNd_-u-H3);
   }
 }
-.svg {
-  object-fit: cover;
-  width: 44px;
-  height: 44px;
+.jface:global(.__wab_instance) {
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 900px) {
-  .svg {
-    width: 30px;
+  .jface:global(.__wab_instance) {
     flex-shrink: 0;
   }
 }
 .randomPadRow__btDGr:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  margin-bottom: -16px;
 }
 .text__kEiSh {
   position: relative;
@@ -337,16 +334,6 @@
   object-fit: contain;
   object-position: center center;
 }
-.contactme:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-.link__biWj5 {
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-}
 .of:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -601,16 +588,6 @@
   object-fit: contain;
   object-position: center center;
 }
-.insta:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-.link__tCluq {
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-}
 .sixfold:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -804,6 +781,27 @@
 .img__oBq6F > :global(.__wab_img-spacer) > img {
   object-fit: contain;
   object-position: center center;
+}
+.contactme:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.link__biWj5 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding-right: 0px;
+}
+.insta:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.link__tCluq {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 .footer:global(.__wab_instance) {
   max-width: 100%;
