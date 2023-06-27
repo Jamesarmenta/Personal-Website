@@ -14,7 +14,7 @@ function RandomPadRow_(props: RandomPadRowProps, ref: HTMLElementRefOf<"div">) {
 
   React.useLayoutEffect(() => {
     const isMobile = window.innerWidth < 800;
-    const MAX_AMOUNT = isMobile ? 10 : 30;
+    const MAX_AMOUNT = isMobile ? 0 : 30;
     
     const paddingAmount = Math.floor(Math.random() * MAX_AMOUNT);
     const paddingDirection = Math.random() > 0.5 ? "paddingLeft" : "paddingRight";

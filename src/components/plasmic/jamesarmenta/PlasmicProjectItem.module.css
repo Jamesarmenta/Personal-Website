@@ -119,8 +119,8 @@
   object-position: center center;
   max-height: 100%;
   max-width: 100%;
-  min-width: 0;
   flex-shrink: 0;
+  min-width: 0;
   margin: auto;
 }
 .img___8P192 > picture > img {
