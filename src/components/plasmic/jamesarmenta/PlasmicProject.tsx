@@ -135,6 +135,25 @@ function PlasmicProject__RenderFunc(props: {
                       "__wab_instance",
                       sty.projectTabItem__iBeLp
                     )}
+                    img={
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__sf1OW)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"none" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"auto" as const}
+                        loading={"eager" as const}
+                        src={{
+                          src: "/plasmic/jamesarmenta/images/postalService.jpg",
+                          fullWidth: 654,
+                          fullHeight: 1000,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
                     tabdestination={"tab2" as const}
                     tabname={"tab1" as const}
                   />

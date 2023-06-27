@@ -67,7 +67,6 @@ export const PlasmicProjectItem__ArgProps = new Array<ArgPropType>(
 
 export type PlasmicProjectItem__OverridesType = {
   root?: p.Flex<"div">;
-  text?: p.Flex<"div">;
 };
 
 export interface DefaultProjectItemProps {
@@ -180,19 +179,6 @@ function PlasmicProjectItem__RenderFunc(props: {
 
             value: args.img
           })}
-          {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-            <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text
-              )}
-            >
-              {"Tap to view next image"}
-            </div>
-          ) : null}
         </div>
       ) : null}
       {true ? (
@@ -219,15 +205,13 @@ function PlasmicProjectItem__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -290,7 +274,6 @@ export const PlasmicProjectItem = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicProjectItem
     internalVariantProps: PlasmicProjectItem__VariantProps,
